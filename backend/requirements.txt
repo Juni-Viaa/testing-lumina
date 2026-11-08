@@ -18,6 +18,9 @@ langchain-text-splitters
 langchain-huggingface
 langchain-google-genai
 
+# Google Generative AI (Gemini)
+google-generativeai
+
 # Embedding model (intfloat/multilingual-e5-large) and Reranker (BAAI/bge-reranker-v2-m3)
 sentence-transformers
 FlagEmbedding; sys_platform != 'win32'

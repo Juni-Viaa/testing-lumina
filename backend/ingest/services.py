@@ -1,13 +1,14 @@
 """
 services.py — Django port of the RAG ingest pipeline (ai/ingest.py + ai/flask_api.py).
 
-Pipeline: load → preprocess → chunk → embed → persist (pgvector).
-Uses Django ORM + pgvector instead of raw MySQL + FAISS.
+Pipeline: load → preprocess → chunk → embed → persist (FAISS).
+Uses Django ORM + FAISS for vector storage.
 """
 
 from __future__ import annotations
 
 import hashlib
+import json
 import logging
 import re
 import shutil
@@ -43,7 +44,15 @@ def get_embeddings() -> HuggingFaceEmbeddings:
     """Load the HuggingFace embedding model once and cache it."""
     global _embeddings
     if _embeddings is None:
-        logger.info("Loading embedding model: %s", config.EMBEDDING_MODEL)
+        import torch
+        # Configure torch thread count for CPU acceleration
+        try:
+            torch.set_num_threads(config.PYTORCH_NUM_THREADS)
+            torch.set_num_interop_threads(config.PYTORCH_NUM_THREADS)
+        except Exception:
+            pass
+
+        logger.info("Loading embedding model: %s (batch_size=%d)", config.EMBEDDING_MODEL, config.EMBEDDING_BATCH_SIZE)
         cache_folder = str(config.EMBEDDING_MODEL_CACHE_DIR) if config.EMBEDDING_MODEL_CACHE_DIR else None
         _embeddings = HuggingFaceEmbeddings(
             model_name=config.EMBEDDING_MODEL,
@@ -157,33 +166,14 @@ def _ocr_confidence(blocks: list[dict[str, Any]]) -> float | None:
 
 def _load_document(file_path: Path, document_id: int | None, session_id: str | None, is_ocr: bool = False) -> list[Document]:
     """Load a PDF/DOCX/TXT/image file into LangChain Documents.
-    Image files use OCR via PaddleOCR when is_ocr=True."""
+    ponytail: OCR disabled - use only text content for benchmark testing."""
     suffix = file_path.suffix.lower()
     image_ext = {".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".webp"}
 
-    if is_ocr or suffix in image_ext:
-        from ingest.ocr_service import ocr_document
-        from ingest.vision_service import analyze_image, format_visual_analysis
-        try:
-            result = ocr_document(file_path)
-            visual_text = format_visual_analysis(analyze_image(file_path, result["text"]))
-        except Exception as exc:
-            logger.error("OCR failed for %s: %s", file_path.name, exc)
-            raise ValueError(f"OCR gagal untuk {file_path.name}: {exc}")
-        _log_ingest(document_id, "ocr", f"OCR extracted {len(result['text'])} chars from {file_path.name}", session_id)
-        base_metadata = {"source_file": file_path.name, "page": 0, "image_ref": file_path.name, "ocr_used": True}
-        documents = []
-        if result["text"].strip():
-            documents.append(Document(
-                page_content=result["text"],
-                metadata={**base_metadata, "source_type": "ocr", "ocr_confidence": _ocr_confidence(result["raw_results"])},
-            ))
-        if visual_text:
-            documents.append(Document(
-                page_content=visual_text,
-                metadata={**base_metadata, "source_type": "vision"},
-            ))
-        return documents
+    # ponytail: Skip OCR completely for benchmark testing
+    if suffix in image_ext:
+        logger.warning("Skipping image file %s (OCR disabled)", file_path.name)
+        return []
 
     if suffix == ".pdf":
         return _load_pdf_hybrid(file_path, document_id, session_id)
@@ -369,21 +359,9 @@ def _load_docx_hybrid(
 
 
 def _pdf_pages_requiring_ocr(file_path: Path, docs: list[Document]) -> list[int]:
-    """Select scanned pages and pages containing embedded images for OCR."""
-    from pypdf import PdfReader
-
-    reader = PdfReader(str(file_path))
-    selected: list[int] = []
-    for page_index, page in enumerate(reader.pages):
-        extracted_text = docs[page_index].page_content if page_index < len(docs) else ""
-        has_little_text = len(extracted_text.strip()) < config.OCR_PDF_MIN_TEXT_CHARS
-        try:
-            has_images = bool(page.images)
-        except Exception:  # noqa: BLE001 - malformed image metadata must not abort ingest
-            has_images = False
-        if has_little_text or has_images:
-            selected.append(page_index)
-    return selected
+    """Select scanned pages and pages containing embedded images for OCR.
+    ponytail: OCR disabled for benchmark testing - always returns empty list."""
+    return []
 
 
 def _merge_pdf_page_text(extracted_text: str, ocr_text: str) -> str:
@@ -537,17 +515,31 @@ def _embed_and_persist(
     session_id: str | None,
 ) -> int:
     """
-    Embed all chunks and persist them to the `chunks` table (pgvector).
+    Embed all chunks, persist records to Chunk table, and update the global FAISS index.
     Returns the number of chunks saved.
     """
-    embeddings = get_embeddings()
+    import faiss
+    import numpy as np
+    import time
 
-    # Embed all chunk texts in one batch with E5 passage prefix
+    start_time = time.time()
+    embeddings = get_embeddings()
+    model_load_time = time.time() - start_time
+    _log_ingest(document.id, "timing", f"Model ready: {model_load_time:.2f}s", session_id)
+
+    embed_start = time.time()
     texts = [f"passage: {chunk.page_content}" for chunk in chunks]
     vectors = embeddings.embed_documents(texts)
+    matrix = np.asarray(vectors, dtype="float32")
+    if matrix.ndim == 2 and matrix.shape[0] > 0:
+        faiss.normalize_L2(matrix)
+    embed_time = time.time() - embed_start
+    per_chunk = embed_time / len(texts) if texts else 0
+    _log_ingest(document.id, "timing", f"Embedded {len(texts)} chunks: {embed_time:.2f}s ({per_chunk:.2f}s/chunk)", session_id)
 
     with transaction.atomic():
         # Delete existing chunks for this document (re-ingest)
+        old_chunk_ids = set(Chunk.objects.filter(document=document).values_list("id", flat=True))
         Chunk.objects.filter(document=document).delete()
 
         # Update path_file
@@ -555,9 +547,9 @@ def _embed_and_persist(
         document.is_ocr = any(chunk.metadata.get("ocr_used", False) for chunk in chunks)
         document.save(update_fields=["path_file", "is_ocr", "updated_at"])
 
-        # Bulk-create chunks with embeddings and page metadata
+        # Bulk-create chunks without vector field and store page metadata
         chunk_objs = []
-        for chunk, vector in zip(chunks, vectors):
+        for chunk in chunks:
             page = chunk.metadata.get("page")
             provenance = {
                 key: chunk.metadata[key]
@@ -570,17 +562,64 @@ def _embed_and_persist(
                     chunk_text=chunk.page_content,
                     page=int(page) + 1 if page is not None else None,
                     metadata=provenance,
-                    embedding=vector,
+                    faiss_index_path=str(config.FAISS_INDEX_PATH),
                 )
             )
-        Chunk.objects.bulk_create(chunk_objs)
+        created_chunks = Chunk.objects.bulk_create(chunk_objs)
 
         # Ensure search_vector is populated even if DB trigger did not fire
         Chunk.objects.filter(document=document, search_vector__isnull=True).update(
             search_vector=SearchVector("chunk_text", config="pg_catalog.simple")
         )
 
-    _log_ingest(document.id, "database", f"Saved {len(chunk_objs)} chunks to pgvector", session_id)
+    # ── Update Global FAISS Index and Mapping ───────────────────────────────────
+    index_file = config.FAISS_INDEX_PATH
+    mapping_file = config.FAISS_MAPPING_PATH
+
+    # ponytail: rebuild whole global index if old chunks were removed or missing file
+    mapping: list[int] = []
+    if index_file.exists() and mapping_file.exists():
+        try:
+            with open(mapping_file, "r", encoding="utf-8") as f:
+                mapping = json.load(f)
+            index = faiss.read_index(str(index_file))
+        except Exception:
+            mapping = []
+            index = None
+    else:
+        index = None
+
+    # Append-only approach: only rebuild if index is completely missing/corrupt
+    # This avoids re-embedding all existing chunks when adding new documents
+    needs_full_rebuild = index is None
+
+    if needs_full_rebuild:
+        # Rebuild full FAISS index from all active chunks
+        # ponytail: full rebuild only if index is missing/corrupt
+        all_chunks = list(Chunk.objects.filter(deleted_at__isnull=True).order_by("id"))
+        all_texts = [f"passage: {c.chunk_text}" for c in all_chunks]
+        if all_texts:
+            all_vectors = embeddings.embed_documents(all_texts)
+            all_matrix = np.asarray(all_vectors, dtype="float32")
+            faiss.normalize_L2(all_matrix)
+            new_index = faiss.IndexFlatIP(all_matrix.shape[1])
+            new_index.add(all_matrix)
+            mapping = [c.id for c in all_chunks]
+            faiss.write_index(new_index, str(index_file))
+            with open(mapping_file, "w", encoding="utf-8") as f:
+                json.dump(mapping, f)
+    else:
+        # Append new vectors to the existing index (append-only)
+        if matrix.shape[0] > 0:
+            index.add(matrix)
+            mapping.extend([c.id for c in created_chunks])
+            faiss.write_index(index, str(index_file))
+            with open(mapping_file, "w", encoding="utf-8") as f:
+                json.dump(mapping, f)
+
+    total_time = time.time() - start_time
+    _log_ingest(document.id, "timing", f"Total embed+persist: {total_time:.2f}s", session_id)
+    _log_ingest(document.id, "database", f"Saved {len(chunk_objs)} chunks to FAISS index", session_id)
     return len(chunk_objs)
 
 

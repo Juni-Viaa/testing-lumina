@@ -192,7 +192,12 @@ KONTEKS DOKUMEN
 """
 
 # Limit embedding activation memory during local ingestion.
-EMBEDDING_BATCH_SIZE = max(1, int(os.getenv("EMBEDDING_BATCH_SIZE", "2")))
+# ponytail: batch_size=16 is optimal for 2-core CPU (AMD Ryzen 3 3250U)
+EMBEDDING_BATCH_SIZE = max(1, int(os.getenv("EMBEDDING_BATCH_SIZE", "16")))
+# ── PyTorch CPU threads ──────────────────────────────────────────
+# Note: HuggingFace SentenceTransformer uses PyTorch internally
+# Set for 2-core/4-thread CPU
+PYTORCH_NUM_THREADS = max(1, int(os.getenv("PYTORCH_NUM_THREADS", "4")))
 # ── OCR Configuration ──────────────────────────────────────────
 OCR_LANG = os.getenv("OCR_LANG", "id")
 OCR_USE_GPU = os.getenv("OCR_USE_GPU", "False") == "True"
@@ -216,3 +221,7 @@ POPPLER_PATH = str(Path(__file__).resolve().parent.parent / "poppler_bin" / "pop
 OCR_CPU_THREADS = max(1, int(os.getenv('OCR_CPU_THREADS', '2')))
 OCR_DET_MAX_SIDE = max(640, int(os.getenv('OCR_DET_MAX_SIDE', '1280')))
 OCR_REC_BATCH_SIZE = max(1, int(os.getenv('OCR_REC_BATCH_SIZE', '1')))
+
+# ── FAISS Configuration ───────────────────────────────────────────────────────
+FAISS_INDEX_PATH = VECTORSTORE_DIR / "faiss.index"
+FAISS_MAPPING_PATH = VECTORSTORE_DIR / "faiss_mapping.json"

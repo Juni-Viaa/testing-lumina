@@ -60,25 +60,25 @@ TEMPLATES = [
 WSGI_APPLICATION = "lumina.wsgi.application"
 ASGI_APPLICATION = "lumina.asgi.application"
 
-# ── Database (SQLite untuk dev, PostgreSQL untuk docker) ──
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+# ── Database (PostgreSQL for Docker, SQLite fallback) ──
+if os.environ.get("DB_HOST"):
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.environ.get("DB_NAME", "lumina"),
+            "USER": os.environ.get("DB_USER", "lumina"),
+            "PASSWORD": os.environ.get("DB_PASSWORD", "lumina_secret"),
+            "HOST": os.environ.get("DB_HOST", "localhost"),
+            "PORT": os.environ.get("DB_PORT", "5432"),
+        }
     }
-}
-
-# ── PostgreSQL (aktifkan kalau pakai docker) ──
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": os.environ.get("DB_NAME", "lumina"),
-#         "USER": os.environ.get("DB_USER", "lumina"),
-#         "PASSWORD": os.environ.get("DB_PASSWORD", "lumina_secret"),
-#         "HOST": os.environ.get("DB_HOST", "localhost"),
-#         "PORT": os.environ.get("DB_PORT", "5432"),
-#     }
-# }
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
 
 # ── Custom User Model ──
 AUTH_USER_MODEL = "core.User"

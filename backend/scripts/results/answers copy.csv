@@ -1,0 +1,567 @@
+qid,answer,cited_sources,gen_time_s,total_time_s,input_tokens,output_tokens,run_date
+Q001,"Tujuan utama dan objek peningkatan standar dalam laporan tersebut adalah sebagai berikut:
+
+**Tujuan Utama Penyusunan Laporan**
+Laporan Peningkatan Standar Sistem Penjaminan Mutu Internal (SPMI) tahun 2025 disusun sebagai bentuk dokumentasi dan pertanggungjawaban Politeknik Negeri Batam dalam melaksanakan siklus SPMI secara berkelanjutan. Secara spesifik, laporan ini bertujuan untuk:
+1. Memberikan gambaran mengenai pelaksanaan peningkatan standar mutu, hasil evaluasi ketercapaian standar, serta identifikasi aspek yang perlu diperbaiki.
+2. Menjadi dasar tindak lanjut peningkatan standar untuk pengembangan mutu pada periode berikutnya.
+3. Menjadi bahan evaluasi dan masukan bagi unit kerja dalam meningkatkan kinerja serta pencapaian sasaran mutu institusi **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 2)**.
+
+**Objek Peningkatan Standar**
+Berdasarkan dokumen yang tersedia, objek peningkatan standar yang disebutkan secara spesifik adalah:
+- **Standar Pengelolaan Institusi pada Butir 35**: Terjadi peningkatan standar pada ayat b, yaitu kenaikan sebesar 2% untuk persentase akreditasi/sertifikasi internasional program studi **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**.
+
+Selain itu, dokumen menyebutkan bahwa evaluasi perubahan standar SPMI tahun 2025 dilakukan berdasarkan hasil ketercapaian target mutu tahun 2025, dan rincian perubahan lainnya dapat dilihat pada Daftar Riwayat Perubahan Standar di halaman 155 dokumen SPMI Polibatam edisi 5 tahun 2025 **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**.",LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:2;LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:3,383.95,384.1,0,0,2026-11-06
+Q002,"Berdasarkan dokumen yang tersedia, hubungan antara hasil evaluasi, tindak lanjut, dan peningkatan standar mutu merupakan bagian dari siklus berkelanjutan dalam Sistem Penjaminan Mutu Internal (SPMI). Berikut adalah penjelasannya:
+
+**Hubungan dalam Siklus SPMI**
+Laporan peningkatan standar SPMI berfungsi sebagai dokumentasi dan pertanggungjawaban atas pelaksanaan siklus penjaminan mutu. Hasil evaluasi terhadap ketercapaian standar dan identifikasi aspek yang perlu diperbaiki menjadi dasar utama dalam menentukan tindak lanjut. Tindak lanjut tersebut kemudian diimplementasikan sebagai upaya peningkatan standar mutu untuk periode berikutnya, yang bertujuan untuk memastikan perbaikan kualitas pendidikan, penelitian, pengabdian masyarakat, serta tata kelola institusi secara berkelanjutan **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 2)**.
+
+**Mekanisme Evaluasi dan Tindak Lanjut**
+Dalam operasionalnya, hubungan ini dijabarkan melalui beberapa mekanisme spesifik:
+
+1.  **Analisis Kinerja sebagai Dasar:** Jurusan diwajibkan melakukan analisis capaian kinerja yang didukung oleh data relevan dan berkualitas. Laporan analisis ini kemudian dipublikasikan kepada pemangku kepentingan sebagai bentuk transparansi dan dasar pengambilan keputusan **(SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf, hal. 72)**.
+2.  **Evaluasi Periodik:** Pemantauan dan evaluasi dilakukan secara periodik (minimal per triwulan atau per semester tergantung jenis kegiatannya). Hasil evaluasi ini, termasuk evaluasi layanan manajemen dan kepuasan pemangku kepentingan, harus didokumentasikan (misalnya dalam Laporan Evaluasi Diri/LED) untuk kemudian ditindaklanjuti dengan perbaikan sistem **(SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf, hal. 88, 91, 95, 100)**.
+3.  **Dokumentasi dan Bukti:** Penjaminan mutu yang efektif mencakup siklus perencanaan, pelaksanaan, analisis, evaluasi, dan tindakan perbaikan. Seluruh tahapan ini harus dibuktikan melalui laporan monitoring dan evaluasi (monev) serta audit internal **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 13)**.
+
+**Kesimpulan**
+Hubungan ketiganya bersifat linear dan siklikal: hasil evaluasi memberikan data mengenai kesenjangan atau capaian kinerja, yang kemudian dianalisis untuk menentukan langkah tindak lanjut. Tindak lanjut tersebut tidak hanya berupa perbaikan operasional, tetapi juga menjadi dasar bagi penetapan atau peningkatan standar mutu agar pengembangan institusi tetap relevan dan berkelanjutan.",LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:2;SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf:72;monev) serta audit internal **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:13,205.41,205.46,0,0,2026-11-06
+Q003,"Berdasarkan dokumen yang tersedia, berikut adalah informasi mengenai evaluasi standar SPMI dan dasar perbaikannya:
+
+**Permasalahan dan Ketidaksesuaian**
+Evaluasi perubahan standar SPMI Politeknik Negeri Batam tahun 2025 dilakukan berdasarkan hasil ketercapaian target mutu tahun 2025 **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**. Meskipun dokumen tidak merinci daftar permasalahan spesifik secara mendetail, laporan tersebut menyebutkan bahwa:
+1. Terdapat identifikasi aspek yang masih perlu diperbaiki sebagai bagian dari siklus Sistem Penjaminan Mutu Internal **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 2)**.
+2. Terdapat perubahan pada standar SPMI edisi 5 tahun 2025, salah satunya pada **Butir 35** mengenai Standar Pengelolaan Institusi, di mana terjadi peningkatan standar pada ayat b terkait persentase akreditasi/sertifikasi internasional program studi sebesar 2% **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**.
+
+**Dasar Perbaikan**
+Hasil evaluasi tersebut dijadikan dasar perbaikan melalui langkah-langkah berikut:
+1. **Dokumentasi dan Tindak Lanjut:** Hasil evaluasi terhadap ketercapaian standar dan identifikasi aspek yang perlu diperbaiki digunakan sebagai dasar pengembangan mutu pada periode berikutnya **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 2)**.
+2. **Pembaruan Dokumen:** Hasil perubahan standar telah diperbaiki dan dituangkan dalam dokumen SPMI Polibatam edisi 5 tahun 2025 **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**.
+3. **Transparansi:** Keterangan mengenai perubahan standar tersebut dapat dilihat pada Daftar Riwayat Perubahan Standar di halaman 155 dokumen SPMI **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**.
+4. **Evaluasi Berkelanjutan:** Hasil pelaksanaan peningkatan standar diharapkan menjadi bahan evaluasi dan masukan bagi unit kerja untuk meningkatkan kinerja serta pencapaian sasaran mutu institusi **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 2)**.
+
+Untuk rincian notulen evaluasi standar SPMI tahun 2025 secara lengkap, dokumen mengarahkan untuk mengakses tautan ""Notulen Evaluasi Standar SPMI Tahun 2025"" yang tersedia dalam laporan tersebut **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**.",LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:3;LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:2,344.0,344.13,0,0,2026-11-06
+Q004,"Laporan Peningkatan Standar SPMI 2025 mendokumentasikan perubahan standar melalui penyajian tabel perbandingan yang terstruktur. Setiap perubahan standar disajikan dengan membagi informasi ke dalam tiga kolom utama untuk memudahkan evaluasi, yaitu:
+
+1. **Standar Lama**
+   Berisi ketentuan atau target mutu yang berlaku sebelumnya.
+2. **Standar Baru**
+   Berisi ketentuan atau target mutu yang telah diperbarui atau disesuaikan.
+3. **Keterangan**
+   Berisi penjelasan mengenai alasan, dasar pertimbangan, atau rincian perubahan yang dilakukan terhadap standar tersebut.
+
+**Contoh Pendokumentasian dalam Laporan:**
+
+* **Standar Pengelolaan Institusi (Butir 35):** Mendokumentasikan peningkatan standar pada ayat b, yaitu kenaikan sebesar 2% untuk persentase akreditasi atau sertifikasi internasional program studi **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**.
+* **Standar Evaluasi Pembelajaran (Butir 1):** Mendokumentasikan penurunan persentase kepuasan dari 80% menjadi 75% dengan keterangan pertimbangan hasil evaluasi di program studi, terutama bidang teknik **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 5)**.
+* **Standar Pengelolaan Kerjasama (Butir 5):** Mendokumentasikan peningkatan rasio kerja sama tingkat internasional dari 2% menjadi 4% per 3 tahun **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 5)**.
+* **Standar Lulusan dan Pelacakan Alumni (Butir 2):** Mendokumentasikan perubahan pada poin h, i, dan m, yang mencakup peningkatan persentase lulusan bekerja, penambahan deskripsi pengukuran kepuasan pengguna, serta penurunan persentase penghasilan lulusan berdasarkan evaluasi renstra jurusan **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 6)**.
+* **Standar Layanan Kepegawaian (Butir 4) dan Layanan Perencanaan Anggaran (Butir 3):** Mendokumentasikan perubahan durasi waktu kerja, seperti penyesuaian waktu pengusulan dan penyediaan fasilitas dari 2 hari menjadi 5 hari kerja, serta revisi program anggaran dari 3 hari menjadi 21 hari kerja berdasarkan evaluasi unit terkait **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 7)**.
+
+Secara keseluruhan, laporan ini disusun sebagai bentuk dokumentasi dan pertanggungjawaban Politeknik Negeri Batam dalam melaksanakan siklus SPMI secara berkelanjutan, di mana hasil perubahan tersebut telah diperbaiki dan dimuat dalam SPMI Polibatam edisi 5 tahun 2025 **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 2, 3)**.",LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:3;LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:5;Butir 5):** Mendokumentasikan peningkatan rasio kerja sama tingkat internasional dari 2% menjadi 4% per 3 tahun **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:5;LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:6;LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:7,204.32,204.4,0,0,2026-11-06
+Q005,"Berdasarkan dokumen yang tersedia, penilaian keberhasilan peningkatan standar SPMI tahun 2025 dilakukan melalui beberapa indikator, bukti pendukung, dan hasil evaluasi sebagai berikut:
+
+**Indikator dan Bukti Keberhasilan**
+
+Keberhasilan peningkatan standar SPMI diukur melalui ketercapaian target mutu yang telah ditetapkan. Beberapa bukti pendukung yang digunakan meliputi:
+
+1. **Hasil Evaluasi Ketercapaian:** Penilaian didasarkan pada hasil evaluasi terhadap ketercapaian target mutu SPMI tahun 2025, yang notulennya dapat diakses melalui tautan resmi institusi **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**.
+2. **Peningkatan Standar Spesifik:** Salah satu indikator keberhasilan yang tercatat adalah peningkatan standar pada Butir 35 ayat b, yaitu kenaikan sebesar 2% untuk persentase akreditasi atau sertifikasi internasional program studi **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**.
+3. **Dokumentasi Penerapan SPMI:** Untuk tingkat jurusan, keberhasilan diukur melalui ketersediaan dokumen penerapan SPMI yang mencakup lima aspek (organ/fungsi SPMI, dokumen SPMI, auditor internal, hasil audit, dan bukti tindak lanjut), laporan evaluasi layanan, serta dokumen manajemen risiko yang diperbarui minimal setiap triwulan **(SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf, hal. 91)**.
+4. **Sistem Manajemen Mutu:** Keberhasilan diukur melalui efektivitas sistem manajemen mutu ISO 9001:2015, yang dibuktikan dengan ketiadaan temuan *Discrepancy* (D) dan *Non-Conformity* (NC) dalam hasil audit **(SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf, hal. 93)**.
+5. **Laporan Periodik:** Tersedianya laporan evaluasi diri, laporan proses belajar mengajar (PBM), serta notulen rapat sebagai bukti kegiatan sistemis dalam menciptakan suasana akademik dan budaya mutu yang baik **(SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf, hal. 95)**.
+
+**Tindak Lanjut**
+
+Hasil dari pelaksanaan dan evaluasi tersebut digunakan sebagai dasar untuk:
+- Mengidentifikasi aspek yang masih perlu diperbaiki.
+- Menjadi bahan evaluasi dan masukan bagi unit kerja dalam meningkatkan kinerja.
+- Menjadi dasar pengembangan mutu pada periode berikutnya **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 2)**.
+
+Informasi mengenai perubahan standar yang telah diperbaiki secara lengkap dapat dilihat pada dokumen SPMI Polibatam edisi 5 tahun 2025 dan Daftar Riwayat Perubahan Standar di halaman 155 **(LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf, hal. 3)**.",LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:3;SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf:91;D) dan *Non-Conformity* (NC) dalam hasil audit **(SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf:93;SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf:95;LAPORAN PENINGKATAN STANDAR SPMI 2025.pdf:2,360.56,361.15,0,0,2026-11-06
+Q006,"Berdasarkan dokumen yang tersedia, kriteria penilaian dalam matriks evaluasi akreditasi institusi perguruan tinggi menggunakan sistem peringkat dengan skala skor 0 hingga 4. Berikut adalah rincian kriteria dan aspek yang dievaluasi:
+
+### Skala Peringkat
+Penilaian dilakukan berdasarkan harkat dan peringkat yang terdiri dari lima kategori:
+1. **Sangat Baik** (Skor 4)
+2. **Baik** (Skor 3)
+3. **Cukup** (Skor 2)
+4. **Kurang** (Skor 1)
+5. **Sangat Kurang** (Skor 0)
+
+*(Catatan: Pada beberapa elemen penilaian tertentu, dokumen menyatakan ""Tidak ada skor nol"")* **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 11, 12, 13, 54, 55)**.
+
+### Aspek yang Dievaluasi
+Matriks ini mengevaluasi berbagai standar yang mencakup tata kelola, sistem penjaminan mutu, hingga pengelolaan sumber daya, di antaranya:
+
+- **Tata Pamong dan Penjaminan Mutu (Standar 2)**
+  Mengevaluasi diseminasi hasil kinerja, sistem audit internal dan eksternal, keberadaan manual mutu (yang mencakup pernyataan, kebijakan, unit pelaksana, standar, prosedur, instruksi kerja, dan pentahapan sasaran mutu), serta implementasi siklus penjaminan mutu (perencanaan, pelaksanaan, analisis, evaluasi, dan tindakan perbaikan) **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 11, 12, 13)**.
+
+- **Pembiayaan, Sarana, dan Prasarana (Standar 6)**
+  Mengevaluasi sistem monitoring dan evaluasi pendanaan internal, transparansi laporan audit keuangan oleh auditor eksternal, serta sistem pengelolaan prasarana dan sarana yang mencakup aspek pengembangan, pencatatan, penggunaan, keamanan, dan pemeliharaan **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 54, 55)**.
+
+- **Evaluasi Diri**
+  Mengevaluasi keterpaduan dan keterkaitan antar komponen evaluasi diri, yang meliputi kedalaman, keluasan, sifat sistemik, serta kejelasan analisis intra dan antar komponen **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 80)**.
+
+Secara keseluruhan, instrumen ini disusun berdasarkan standar-standar yang mencakup Visi/Misi, Tata Pamong, Mahasiswa, SDM, Kurikulum, Pembiayaan/Sarana, serta Penelitian dan Pengabdian Masyarakat **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 2)**.",6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:80;6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:2,349.19,349.28,0,0,2026-11-06
+Q007,"Matriks penilaian dalam dokumen tersebut membedakan tingkat pemenuhan indikator dengan menggunakan dua pendekatan utama, yaitu melalui deskripsi kualitatif (harkat dan peringkat) dan perhitungan kuantitatif (skor).
+
+Berikut adalah penjelasan mengenai cara matriks tersebut membedakan tingkat pemenuhan indikator:
+
+### 1. Pendekatan Deskriptif (Kualitatif)
+Matriks menggunakan skala peringkat untuk menilai sejauh mana suatu elemen memenuhi standar yang ditetapkan. Skala ini umumnya dibagi menjadi lima kategori: **Sangat Baik (4), Baik (3), Cukup (2), Kurang (1), dan Sangat Kurang (0)**.
+
+Perbedaan antar-tingkat ditentukan oleh kelengkapan dan kualitas pemenuhan deskriptor, contohnya:
+- **Elemen 1.1 (Visi, Misi, Tujuan, Sasaran):** Pembedaan dilakukan berdasarkan kejelasan, kerealistikan, keterkaitan antar-elemen, serta pihak-pihak yang dilibatkan dalam penyusunannya (misalnya: keterlibatan dosen, mahasiswa, tenaga kependidikan, alumni, dan masyarakat) **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 3)**.
+- **Elemen 3.1.12 (Upaya Peningkatan Prestasi Mahasiswa):** Pembedaan didasarkan pada jumlah upaya yang dilakukan secara terprogram, mulai dari tiga upaya (bimbingan, dana, dan kesempatan berpartisipasi) untuk peringkat tertinggi, hingga tidak ada upaya sama sekali untuk peringkat terendah **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 27)**.
+- **Elemen 6.2.6 (Layanan Perpustakaan):** Pembedaan didasarkan pada jumlah aspek layanan yang dikelola (waktu, mutu, dan e-library) serta persentase tingkat kunjungan mahasiswa dan dosen **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 58)**.
+
+### 2. Pendekatan Kuantitatif (Rumus Skor)
+Untuk indikator yang bersifat terukur, matriks menggunakan rumus matematis untuk menentukan skor akhir berdasarkan data empiris. Beberapa contohnya adalah:
+- **Persentase Mahasiswa DO (MDO):** Skor ditentukan berdasarkan nilai MDO. Jika MDO ≤ 6%, skor adalah 4. Jika 6% < MDO < 45%, skor dihitung dengan rumus `[180 – (400 x MDO)] / 39`, dan jika MDO ≥ 45%, skor adalah 0 **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 27)**.
+- **Rasio Mahasiswa Transfer:** Skor ditentukan berdasarkan nilai rasio. Jika rasio ≤ 0.25, skor adalah 4. Jika 0.25 < rasio < 1.25, skor dihitung dengan rumus `5 – (4 x Rasio)`, dan jika rasio > 1.25, skor adalah 0 **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 21)**.
+- **Rasio Respon Alumni:** Jika rasio ≥ 20%, skor adalah 4. Jika rasio < 20%, skor dihitung dengan rumus `(20 x Rasio)` **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 33)**.
+
+### Kesimpulan
+Matriks membedakan tingkat pemenuhan dengan cara:
+1. **Kualitatif:** Menilai kelengkapan komponen atau pihak yang terlibat dalam suatu proses.
+2. **Kuantitatif:** Menggunakan ambang batas (*threshold*) dan rumus perhitungan untuk menghasilkan skor yang objektif berdasarkan data numerik.
+
+Kedua metode ini memastikan bahwa penilaian terhadap institusi dapat dilakukan secara komprehensif, baik dari sisi substansi program maupun capaian kinerja berbasis data.",6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:3;6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:27;6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:58;6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:21;20 x Rasio)` **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:33,388.56,388.69,0,0,2026-11-06
+Q008,"Berdasarkan dokumen yang tersedia, jenis dokumen atau bukti pendukung yang diperlukan untuk menunjukkan bahwa suatu indikator telah terpenuhi bervariasi tergantung pada standar atau aspek yang dinilai. Berikut adalah rinciannya:
+
+**1. Tata Pamong dan Organisasi**
+Untuk memenuhi standar tata pamong dan organisasi, diperlukan:
+- Dokumen formal Struktur Organisasi dan Tata Kerja (SOTK) Jurusan yang termuat di dalam Renstra **(SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf, hal. 89)**.
+- Laporan, dokumentasi, atau bukti lain terkait penerapan 5 kaidah *good governance* (kredibilitas, transparansi, akuntabilitas, tanggung jawab), yang mencakup dokumen penunjukan tata pamong serta laporan audit mutu **(SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf, hal. 89)**.
+
+**2. Sistem Penjaminan Mutu dan Perencanaan**
+- Manual Mutu yang lengkap dan terintegrasi, yang meliputi pernyataan mutu, kebijakan mutu, unit pelaksana, standar mutu, prosedur mutu, instruksi kerja, dan pentahapan sasaran mutu **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 12)**.
+- Dokumen formal yang berisi rumusan tujuan bertahap, tonggak-tonggak capaian (*milestones*) dalam setiap periode kepemimpinan, serta mekanisme kontrol ketercapaiannya **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 3)**.
+
+**3. Kurikulum dan Pembiayaan**
+- Dokumen formal yang mencakup kebijakan, peraturan, serta pedoman atau buku panduan untuk perencanaan, pengembangan, dan pemutakhiran kurikulum **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 45)**.
+- Dokumen pengelolaan dana yang mencakup perencanaan penerimaan dan pengalokasian, pelaporan, audit, monitoring dan evaluasi, serta pertanggungjawaban kepada pemangku kepentingan **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 50)**.
+
+**4. Penelitian dan Pengabdian**
+Untuk kegiatan penelitian dan pengabdian, bukti yang diperlukan meliputi:
+- Laporan kemajuan pelaksanaan, logbook perkembangan, serta luaran yang telah dicapai (seperti publikasi, HAKI, buku ajar, atau dokumentasi lainnya) **(Panduan Penelitian dan Pengabdian 2024-2025.pdf, hal. 9, 29)**.
+- Laporan final hasil kegiatan yang mengakomodir masukan dari *reviewer* **(Panduan Penelitian dan Pengabdian 2024-2025.pdf, hal. 9, 29)**.
+- Dokumen pendukung untuk pencairan dana, seperti surat pernyataan bermaterai Rp10.000,- mengenai status pendanaan dan riwayat penelitian/pengabdian tim **(Panduan Penelitian dan Pengabdian 2024-2025.pdf, hal. 9, 29)**.
+- Borang monitoring pelaksanaan penelitian dan catatan keuangan penggunaan dana (*logbook* RAB) **(Panduan Penelitian dan Pengabdian 2024-2025.pdf, hal. 29)**.",SOTK) Jurusan yang termuat di dalam Renstra **(SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf:89;SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf:89;6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:12;6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:3;6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:45;6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:50;*logbook* RAB) **(Panduan Penelitian dan Pengabdian 2024-2025.pdf:29,332.63,332.7,0,0,2026-11-06
+Q009,"Berdasarkan dokumen yang tersedia, hubungan antara hasil evaluasi diri dengan penilaian dalam matriks borang akreditasi dapat dijelaskan sebagai berikut:
+
+**Hubungan Evaluasi Diri dan Matriks Penilaian**
+Laporan evaluasi diri merupakan dokumen yang dinilai menggunakan matriks penilaian yang telah ditetapkan oleh BAN-PT. Dalam proses akreditasi, kualitas laporan evaluasi diri tersebut diukur berdasarkan beberapa aspek utama yang mencakup akurasi data, kualitas analisis, serta keterpaduan antar komponen **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 78, 80)**.
+
+**Aspek Penilaian dalam Matriks**
+Dalam matriks penilaian, terdapat beberapa kriteria yang digunakan untuk mengevaluasi laporan evaluasi diri perguruan tinggi:
+
+1. **Akurasi dan Kelengkapan Data**
+   Penilaian dilakukan terhadap cara perguruan tinggi mengemukakan fakta, kelengkapan data, penggunaan kurun waktu yang jelas, serta adanya *cross-reference* antar komponen evaluasi diri. Selain itu, dinilai pula kemampuan pengolahan data menjadi informasi yang bermanfaat melalui metode kuantitatif dan kualitatif yang memadai **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 78)**.
+
+2. **Kualitas Analisis**
+   Matriks menilai bagaimana identifikasi dan perumusan masalah dilakukan pada semua komponen evaluasi diri. Analisis yang baik harus dilakukan secara kritis, cermat, jujur, terbuka, analitis, sistematis, dan sistemik **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 78)**.
+
+3. **Keterpaduan dan Keterkaitan**
+   Penilaian mencakup kedalaman, keluasan, dan sifat sistemik dari analisis keseluruhan komponen evaluasi diri, serta kejelasan analisis intra dan antar komponen tersebut **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 80)**.
+
+**Kesimpulan**
+Hasil evaluasi diri menjadi objek utama yang dinilai dalam matriks borang. Skor (1 hingga 4) diberikan berdasarkan sejauh mana laporan tersebut memenuhi standar kualitas, mulai dari kelengkapan data hingga kedalaman analisis sistemik. Laporan yang disusun dengan jelas, didukung data lengkap, dan memiliki keterkaitan antar komponen yang kuat akan mendapatkan skor yang lebih tinggi dalam matriks penilaian tersebut **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 78, 80)**.",6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:78;6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:80,331.36,331.41,0,0,2026-11-06
+Q010,"Berdasarkan dokumen yang tersedia, penilaian terhadap kondisi di mana bukti pendukung tidak memadai atau tidak lengkap bergantung pada konteks standar yang sedang dievaluasi:
+
+1. **Sistem Monitoring dan Evaluasi (Monev)**
+   Jika pedoman formal tersedia namun tidak dilaksanakan, atau jika pelaksanaan monev kinerja dosen tidak terdokumentasi dengan baik, maka kondisi tersebut dinilai sebagai berikut:
+   - Untuk **sistem monitoring dan evaluasi**, jika pedoman formal lengkap tetapi tidak dilaksanakan, maka dinilai sebagai kategori ""Cukup"" (skor 2). Jika pedoman tidak lengkap dan tidak dilaksanakan, maka dinilai sebagai kategori ""Kurang"" (skor 1) **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 36)**.
+   - Untuk **pelaksanaan monev kinerja dosen**, jika monev dilakukan namun tidak terdokumentasi dengan baik, maka dinilai sebagai kategori ""Baik"" (skor 3). Jika monev hanya terdokumentasi di bidang pendidikan saja tanpa bukti di bidang penelitian atau pengabdian, maka dinilai sebagai kategori ""Cukup"" (skor 2) **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 36)**.
+
+2. **Pengembangan Kurikulum**
+   Jika dokumen formal kebijakan tersedia namun tidak memiliki pedoman atau buku panduan yang memfasilitasi perencanaan, pengembangan, dan pemutakhiran kurikulum, maka penilaiannya berada di bawah kategori ""Sangat Baik"" atau ""Baik"", tergantung pada kelengkapan elemen dokumen yang ada **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 45)**.
+
+3. **Validasi Asesmen Mandiri (Tugas Akhir)**
+   Dalam konteks pengakuan karya dan prestasi untuk Tugas Akhir, reviu dilakukan berdasarkan hasil asesmen mandiri beserta bukti pendukung yang harus memenuhi kriteria **memadai, valid, dan dapat dibuktikan keasliannya**. Jika bukti pendukung tidak memenuhi kriteria tersebut, maka validasi tidak dapat dilakukan dalam rapat reviu **(Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf, hal. 36)**.
+
+4. **Sistem Basis Data**
+   Jika basis data untuk penyusunan evaluasi diri institusi atau program studi kurang lengkap, maka dinilai sebagai kategori ""Kurang"" (skor 1) **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf, hal. 14)**.
+
+Secara umum, dokumen menekankan pentingnya dokumentasi yang lengkap dan dapat dipertanggungjawabkan sebagai syarat utama dalam pemenuhan standar mutu dan proses evaluasi.",skor 1) **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:36;skor 2) **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:36;6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:45;Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf:36;skor 1) **(6 BUKU 6 MATRIKS PENILAIAN BORANG DAN EVALUASI DIRI AIPT 2011.pdf:14,213.14,213.22,0,0,2026-11-06
+Q011,"Berikut adalah penjelasan mengenai pengertian Tugas Akhir (TA), program studi Teknologi Rekayasa Perangkat Lunak (TRPL), serta hubungan keduanya berdasarkan dokumen panduan yang tersedia:
+
+### Pengertian Tugas Akhir (TA)
+Tugas Akhir adalah karya ilmiah yang disusun berdasarkan kegiatan penelitian atau rekayasa, yang dilakukan oleh mahasiswa tingkat akhir sebagai salah satu syarat kelulusan program pendidikan jenjang D3 dan D4 di Politeknik Negeri Batam **(Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf, hal. 13)**. TA dikerjakan dalam jangka waktu satu sampai dua semester di bawah pengawasan dosen pembimbing **(Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf, hal. 13)**.
+
+### Pengertian TRPL
+TRPL merupakan singkatan dari Teknologi Rekayasa Perangkat Lunak, yaitu salah satu program studi yang berada di bawah naungan Jurusan Teknik Informatika Politeknik Negeri Batam **(Panduan TA TRPL v3.pdf, hal. 1; Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf, hal. 6)**.
+
+### Hubungan TA dan TRPL
+Hubungan antara TA dan TRPL terletak pada penerapan standar akademik dan ruang lingkup proyek yang harus dipenuhi oleh mahasiswa program studi tersebut:
+
+1. **Kesesuaian Kurikulum**
+   Sebagai bagian dari Jurusan Teknik Informatika, mahasiswa TRPL wajib mengikuti aturan dan prosedur pelaksanaan TA yang ditetapkan dalam buku panduan jurusan, termasuk prasyarat akademik (telah menempuh mata kuliah semester 1 sampai 6 untuk program D4) **(Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf, hal. 6, 23)**.
+
+2. **Ruang Lingkup Khusus**
+   Mahasiswa TRPL memiliki ruang lingkup TA yang spesifik, yaitu pengembangan produk perangkat lunak berbasis aplikasi praktis, riset terapan, serta inovasi dalam rekayasa perangkat lunak yang menjawab kebutuhan industri, teknologi informasi, dan bisnis digital **(Panduan TA TRPL v3.pdf, hal. 1)**.
+
+3. **Standar Kompleksitas**
+   Tugas Akhir di prodi TRPL wajib berfokus pada masalah dengan tingkat kesulitan minimal *broadly-defined* atau *complex engineering problems*. Topik yang hanya bersifat *well-defined* (seperti aplikasi CRUD sederhana atau proyek dengan kompleksitas rendah) tidak diperkenankan sebagai Tugas Akhir D4 TRPL **(Panduan TA TRPL v3.pdf, hal. 1)**.
+
+4. **Tujuan Pelaksanaan**
+   Meskipun memiliki fokus teknis yang spesifik, tujuan akhir dari TA bagi mahasiswa TRPL tetap selaras dengan tujuan umum TA di Politeknik Negeri Batam, yaitu agar mahasiswa mampu mengidentifikasi masalah, melakukan penelitian atau rekayasa, serta menyajikan hasil karya ilmiah secara sistematis, logis, dan kreatif untuk memberikan manfaat bagi pihak yang berkepentingan **(Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf, hal. 14)**.",Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf:13;Panduan TA TRPL v3.pdf:1;seperti aplikasi CRUD sederhana atau proyek dengan kompleksitas rendah) tidak diperkenankan sebagai Tugas Akhir D4 TRPL **(Panduan TA TRPL v3.pdf:1;Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf:14,258.24,258.27,0,0,2026-11-06
+Q012,"Menurut panduan, selain produk utama, setiap Tugas Akhir (TA) Program Studi Teknologi Rekayasa Perangkat Lunak (TRPL) dapat menyertakan komponen-komponen tambahan sebagai berikut:
+
+1. **Artefak Rekayasa Perangkat Lunak**
+   Komponen ini mencakup diagram-diagram teknis seperti *Use Case Diagram*, *Class Diagram*, *ERD*, arsitektur sistem, dokumentasi API, serta bukti implementasi *workflow* pengembangan **(Panduan TA TRPL v3.pdf, hal. 3)**.
+
+2. **Validasi & Evaluasi**
+   Komponen ini meliputi pengujian bertingkat (*multi-level testing*) seperti *unit testing*, *integration testing*, dan *system testing*. Selain itu, mencakup *Usability Testing* (seperti *heuristic evaluation*, skor SUS, dan umpan balik pengguna) serta *User Acceptance Test* (UAT) untuk memastikan kesesuaian dengan kebutuhan **(Panduan TA TRPL v3.pdf, hal. 3)**.
+
+3. **Dokumentasi Penelitian**
+   Komponen ini terdiri dari laporan lengkap yang disusun sesuai format akademik serta draf artikel ilmiah untuk jurnal atau konferensi (diwajibkan minimal satu) **(Panduan TA TRPL v3.pdf, hal. 3)**.",Panduan TA TRPL v3.pdf:3;UAT) untuk memastikan kesesuaian dengan kebutuhan **(Panduan TA TRPL v3.pdf:3;diwajibkan minimal satu) **(Panduan TA TRPL v3.pdf:3,332.64,332.66,0,0,2026-11-06
+Q013,"Berdasarkan panduan yang tersedia, berikut adalah lima jenis output produk Tugas Akhir untuk program studi Teknologi Rekayasa Perangkat Lunak (TRPL) beserta contohnya:
+
+1. **Produk Aplikasi Web**
+   Contoh: Sistem Informasi Akademik, E-commerce Marketplace, dan Aplikasi Manajemen Proyek.
+
+2. **Produk Aplikasi Mobile**
+   Contoh: Aplikasi Pemesanan Online, Aplikasi Kesehatan, dan Mobile Game.
+
+3. **Produk Sistem Cerdas**
+   Contoh: Sistem Rekomendasi Produk, Prediksi Penjualan, dan Klasifikasi Citra.
+
+4. **Produk IoT**
+   Contoh: Sistem Monitoring Suhu Gudang, Smart Lock, dan Kontrol Irigasi Otomatis.
+
+5. **Produk Pengujian**
+   Contoh: Kerangka Kerja Pengembangan (Framework), Alat Pengujian Otomatis, dan Desain Arsitektur Sistem.
+
+**(Panduan TA TRPL v3.pdf, hal. 3)**",Panduan TA TRPL v3.pdf:3,301.65,301.69,0,0,2026-11-06
+Q014,"Berdasarkan dokumen yang tersedia, tidak disebutkan adanya ""lima kelompok analisis"" yang spesifik dalam pelaksanaan Tugas Akhir (TA) Program Studi Teknologi Rekayasa Perangkat Lunak (TRPL).
+
+Namun, dokumen tersebut menjelaskan kriteria topik Tugas Akhir yang harus memenuhi standar tingkat kesulitan *broadly-defined* atau *complex engineering problems*. Dalam konteks tersebut, terdapat poin-poin aspek yang harus diperhatikan dalam analisis dan pengembangan TA, yaitu:
+
+1. **Aspek Teknis dan Non-Teknis**
+   Meliputi performa, keamanan, biaya, serta aspek sosial **(Panduan TA TRPL v3.pdf, hal. 1)**.
+2. **Aspek Keberlanjutan, Regulasi, dan Etika**
+   Merupakan bagian dari pertimbangan dalam *complex problems* **(Panduan TA TRPL v3.pdf, hal. 1)**.
+3. **Analisis dan Sintesis Mendalam**
+   Membutuhkan justifikasi metodologi dan tidak dapat diselesaikan hanya dengan prosedur standar **(Panduan TA TRPL v3.pdf, hal. 1)**.
+4. **Desain Arsitektur Perangkat Lunak**
+   Mahasiswa didorong untuk memiliki kemampuan dalam merancang arsitektur sistem **(Panduan TA TRPL v3.pdf, hal. 1)**.
+5. **Evaluasi Menyeluruh**
+   Meliputi pengujian, validasi, dan *usability testing* **(Panduan TA TRPL v3.pdf, hal. 1)**.
+
+Jika yang Anda maksud adalah komponen dalam laporan atau proposal, dokumen menyebutkan struktur seperti Pendahuluan, Tinjauan Pustaka, Metodologi, Hasil dan Pembahasan, serta Kesimpulan **(Panduan TA TRPL v3.pdf, hal. 7; Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf, hal. 46)**.
+
+Maaf, jika informasi mengenai ""lima kelompok analisis"" yang Anda maksud merujuk pada istilah spesifik lain, informasi tersebut tidak ditemukan dalam dokumen yang tersedia.",Panduan TA TRPL v3.pdf:1,554.89,554.99,0,0,2026-11-06
+Q015,"Berdasarkan dokumen yang tersedia, berikut adalah sistematika untuk proposal dan laporan akhir Tugas Akhir (TA) Program Studi Teknologi Rekayasa Perangkat Lunak (TRPL):
+
+### Sistematika Proposal Tugas Akhir TRPL
+Untuk pengajuan topik Tugas Akhir, mahasiswa harus mengikuti format berikut:
+
+1. **Halaman Judul**
+2. **Daftar Isi**
+3. **Daftar Tabel**
+4. **Daftar Gambar**
+5. **Bab I: Pendahuluan**
+   - Latar Belakang (penjelasan masalah dan urgensi penelitian)
+   - Rumusan Masalah (pernyataan masalah utama)
+   - Tujuan (sasaran yang ingin dicapai)
+   - Batasan Masalah (batasan permasalahan dan fokus TA)
+   - Manfaat (kontribusi akademik dan praktis)
+6. **Bab II: Tinjauan Pustaka**
+   - Penelitian Terkait
+   - Landasan Teori (teori pendukung, konsep pemrograman, algoritma, arsitektur sistem, kerangka teori/konsep seperti SDLC, Design Pattern, dll.)
+   - Metode Pengembangan Produk
+   - Metode Analisis yang Digunakan
+7. **Bab III: Metodologi**
+   - Alat dan Bahan (perangkat lunak, perangkat keras, dataset)
+   - Jalannya Penelitian (alur penelitian)
+   - Tahapan Pengembangan Aplikasi (sesuai metode yang dipilih, misal: Agile, Waterfall, dll.)
+   - Rencana Perancangan Sistem
+   - Rencana Analisis
+8. **Jadwal Penelitian**
+9. **Daftar Pustaka**
+10. **Lampiran** (Instrumen, Kuesioner, dsb.)
+
+*(Panduan TA TRPL v3.pdf, hal. 7)*
+
+---
+
+### Sistematika Laporan Akhir Tugas Akhir
+Dokumen yang tersedia memberikan panduan umum mengenai isi laporan akhir untuk Jurusan Teknik Informatika (yang mencakup program studi di lingkungan Politeknik Negeri Batam). Laporan akhir minimal terdiri dari poin-poin berikut:
+
+1. **Halaman Judul** (memuat judul TA, nama dan NIM, logo institusi, nama institusi, tahun penyelesaian).
+2. **Halaman Pengesahan** (khusus untuk berkas final, memuat judul, nama, NIM, serta tanda tangan pembimbing dan penguji).
+3. **Abstrak** (dalam Bahasa Indonesia dan/atau Inggris, memuat masalah pokok/tujuan, metode, temuan penting, simpulan, dan implikasi).
+4. **Pendahuluan** (latar belakang, perumusan masalah, tujuan, dll.).
+5. **Landasan Teori atau Tinjauan Pustaka**.
+6. **Hipotesis** (jika ada).
+7. **Metodologi Penelitian atau Metodologi Rekayasa/Pengembangan Produk** (langkah-langkah penyelesaian masalah, pengambilan data, analisis hasil, proses pengerjaan).
+8. **Hasil dan Pembahasan** (temuan ilmiah, penjelasan logis, dan argumentasi rasional).
+9. **Kesimpulan** (ringkasan hasil penting, implikasi, dan jawaban atas rumusan masalah).
+10. **Daftar Pustaka**.
+
+*(Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf, hal. 45-46)*
+
+**Catatan Tambahan:**
+- Poin-poin di atas merupakan isi atau konten laporan, bukan judul bab yang kaku.
+- Rencana detail penelitian atau rancangan produk dapat disertakan sebagai lampiran, bersama dengan dokumen pendukung lainnya seperti hasil pengujian, manual program, atau potongan kode (*source code*). *(Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf, hal. 46)*",Panduan TA TRPL v3.pdf:7;*source code*). *(Buku_Panduan_Tugas_Akhir_Teknik_Informatika.pdf:46,373.41,373.47,0,0,2026-11-06
+Q016,"Tahun akademik 2026/2027 di Politeknik Negeri Batam memiliki pembagian periode sebagai berikut:
+
+**Periode Semester Ganjil**
+*   **Awal:** Kegiatan dimulai dengan daftar ulang pada 20 Juli 2026 dan kuliah perdana dimulai pada 7 September 2026 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1)**.
+*   **Akhir:** Semester ini berakhir dengan kegiatan kunci nilai pada 12 Februari 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1)**.
+
+**Periode Semester Genap**
+*   **Awal:** Kegiatan dimulai dengan persiapan kuliah perdana pada 9–15 Maret 2027 dan kuliah perdana dimulai pada 22 Maret 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Akhir:** Semester ini berakhir dengan batas akhir yudisium pada 10 September 2027 dan pelaporan nilai PDDIKTI pada 11 September 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+
+Secara keseluruhan, tahun akademik 2026/2027 mencakup rangkaian kegiatan akademik yang dimulai dari Juli 2026 hingga berakhir pada September 2027. Perlu dicatat bahwa jadwal tersebut bersifat tentatif dan mahasiswa disarankan untuk selalu memeriksa informasi pada laman resmi Polibatam **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.",Kalender_Akademik_2026-2027_Teks.pdf:1;Kalender_Akademik_2026-2027_Teks.pdf:2,311.55,311.58,0,0,2026-11-06
+Q017,"Berdasarkan dokumen yang tersedia, berikut adalah informasi mengenai jadwal perkuliahan, Asesmen Tengah Semester (ATS), dan Asesmen Akhir Semester (AAS) untuk tahun akademik 2026/2027:
+
+### **Jadwal Semester Ganjil 2026/2027**
+*   **Kuliah Perdana:** 7 September 2026 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1)**.
+*   **Pelaksanaan ATS:** 2–13 November 2026 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1)**.
+*   **Pelaksanaan AAS:** 11–22 Januari 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1)**.
+
+### **Jadwal Semester Genap 2026/2027**
+*   **Kuliah Perdana:** 22 Maret 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Pelaksanaan ATS:** 17–28 Mei 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Pelaksanaan AAS:** 26 Juli–6 Agustus 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+
+---
+
+### **Ketentuan Tambahan**
+1.  **Waktu Perkuliahan:** Secara umum, perkuliahan dilaksanakan pada hari Senin sampai Jumat antara pukul 07.00 hingga 23.00 WIB. Namun, perkuliahan dapat diselenggarakan di luar jadwal tersebut berdasarkan kesepakatan antara mahasiswa atau perwakilannya dengan dosen **(PEDOMAN PEMBELAJARAN.pdf, hal. 25)**.
+2.  **Durasi Pembelajaran:** Proses pembelajaran dilaksanakan dalam minimal 16 minggu, yang sudah mencakup pelaksanaan ATS dan AAS **(PEDOMAN PEMBELAJARAN.pdf, hal. 17)**.
+3.  **Penjadwalan:** Jadwal penilaian hasil belajar (ATS dan AAS) secara rinci disusun dan diterbitkan oleh jurusan, program studi, atau dosen minimal 1 minggu sebelum pelaksanaan evaluasi **(PEDOMAN PEMBELAJARAN.pdf, hal. 29)**.
+4.  **Sifat Jadwal:** Jadwal yang tercantum dalam Kalender Akademik bersifat tentatif, sehingga mahasiswa disarankan untuk aktif memeriksa informasi pada laman resmi Polibatam **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.","AAS) untuk tahun akademik 2026/2027:
+
+### **Jadwal Semester Ganjil 2026/2027**
+*   **Kuliah Perdana:** 7 September 2026 **(Kalender_Akademik_2026-2027_Teks.pdf:1;Kalender_Akademik_2026-2027_Teks.pdf:1;Kalender_Akademik_2026-2027_Teks.pdf:2;PEDOMAN PEMBELAJARAN.pdf:25;PEDOMAN PEMBELAJARAN.pdf:17;PEDOMAN PEMBELAJARAN.pdf:29",299.63,299.68,0,0,2026-11-06
+Q018,"Berdasarkan dokumen yang tersedia, informasi mengenai waktu spesifik atau periode kalender untuk registrasi mahasiswa atau pengisian rencana studi tidak disebutkan secara rinci.
+
+Namun, dokumen memberikan beberapa ketentuan terkait hal tersebut sebagai berikut:
+
+1. **Jadwal Perwalian**: Mahasiswa wajib menaati jadwal perwalian yang tertulis dalam kalender akademik **(PEDOMAN PEMBELAJARAN.pdf, hal. 25)**.
+2. **Daftar Ulang**: Mahasiswa harus melakukan daftar ulang sesuai dengan batas akhir pendaftaran yang telah ditetapkan dan diumumkan. Kelalaian dalam melakukan daftar ulang akan mengakibatkan mahasiswa dinyatakan nonaktif selama satu semester **(PEDOMAN PEMBELAJARAN.pdf, hal. 23)**.
+3. **Registrasi Asrama**: Bagi penghuni asrama, perpanjangan izin tinggal dilakukan melalui proses registrasi ulang setiap semester yang jadwalnya akan diumumkan **(PEDOMAN PEMBELAJARAN.pdf, hal. 47)**.
+
+Maaf, saya tidak menemukan informasi mengenai tanggal atau bulan spesifik pelaksanaan periode registrasi atau pengisian rencana studi pada dokumen yang tersedia. Anda disarankan untuk merujuk pada kalender akademik resmi Polibatam.",PEDOMAN PEMBELAJARAN.pdf:25;PEDOMAN PEMBELAJARAN.pdf:23;PEDOMAN PEMBELAJARAN.pdf:47,246.64,246.68,0,0,2026-11-06
+Q019,"Berdasarkan Kalender Akademik Tahun Akademik 2026/2027 Politeknik Negeri Batam, berikut adalah rincian periode libur dan hari libur yang tercantum:
+
+**1. Libur Semester**
+*   **Libur Ganjil 2026:** Berlangsung pada bulan Februari 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1)**.
+
+**2. Hari Libur Nasional dan Keagamaan**
+*   **HUT RI:** 17 Agustus 2026 dan 17 Agustus 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1, 2)**.
+*   **Maulid Nabi:** 25 Agustus 2026 dan 15 Agustus 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1, 2)**.
+*   **Hari Natal:** 24–25 Desember 2026 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1)**.
+*   **Tahun Baru Masehi 2027:** 1 Januari 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1)**.
+*   **Isra Mi'raj:** 5 Januari 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 1)**.
+*   **Hari Raya Nyepi:** 8 Maret 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Hari Raya Idul Fitri:** Maret 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Cuti Bersama:** 25 Maret 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Wafat Isa Almasih:** 26 Maret 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Kebangkitan Isa Almasih:** 28 Maret 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Hari Buruh Internasional:** 1 Mei 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Kenaikan Isa Almasih:** 6 Mei 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Hari Raya Idul Adha:** 17–18 Mei 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Hari Raya Waisak:** 19–20 Mei 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Hari Lahir Pancasila:** 1 Juni 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+*   **Tahun Baru Islam:** 6 Juni 2027 **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.
+
+Perlu diperhatikan bahwa jadwal dalam kalender akademik tersebut bersifat tentatif, sehingga mahasiswa disarankan untuk tetap aktif memeriksa informasi pada laman resmi Polibatam **(Kalender_Akademik_2026-2027_Teks.pdf, hal. 2)**.",Kalender_Akademik_2026-2027_Teks.pdf:1;Kalender_Akademik_2026-2027_Teks.pdf:2,261.31,261.36,0,0,2026-11-06
+Q020,"Berdasarkan Kalender Akademik 2026/2027, berikut adalah jadwal kegiatan akademik yang berdekatan dengan periode Asesmen Akhir Semester (AAS) dan libur akademik:
+
+### 1. Semester Ganjil 2026/2027
+Periode AAS Semester Ganjil berlangsung pada **11–22 Januari 2027** (Kalender_Akademik_2026-2027_Teks.pdf, hal. 1). Kegiatan yang berdekatan dengan periode tersebut adalah:
+
+*   **4–8 Januari 2027**: Minggu Pengganti, Perwalian, dan Daftar Ulang.
+*   **5 Januari 2027**: Isra Mi'raj.
+*   **18 Januari–19 Februari 2027**: Daftar Ulang Genap 2026.
+*   **Februari 2027**: Libur Ganjil 2026.
+*   **8 Februari 2027**: Publikasi Nilai.
+*   **9–10 Februari 2027**: Masa Sanggah.
+*   **12 Februari 2027**: Kunci Nilai.
+
+### 2. Semester Genap 2026/2027
+Periode AAS Semester Genap berlangsung pada **26 Juli–6 Agustus 2027** (Kalender_Akademik_2026-2027_Teks.pdf, hal. 2). Kegiatan yang berdekatan dengan periode tersebut adalah:
+
+*   **19–23 Juli 2027**: Minggu Pengganti, Perwalian Pra AAS, dan Daftar Ulang.
+*   **30 Juli 2027**: Batas Akhir Penerimaan Jalur Mandiri.
+*   **2 Agustus–3 September 2027**: Daftar Ulang Ganjil 2027.
+*   **15 Agustus 2027**: Maulid Nabi.
+*   **17 Agustus 2027**: HUT Republik Indonesia.
+*   **23 Agustus 2027**: Publikasi Nilai.
+*   **24–25 Agustus 2027**: Masa Sanggah.
+*   **27 Agustus 2027**: Kunci Nilai.
+
+**Catatan Penting:**
+*   Mahasiswa diwajibkan untuk mempelajari dan mematuhi jadwal dalam kalender akademik, karena kelalaian terhadap jadwal tidak dapat digunakan sebagai alasan untuk mengubah layanan atau kegiatan akademik (PEDOMAN PEMBELAJARAN.pdf, hal. 24).
+*   Jadwal dalam kalender akademik bersifat tentatif, sehingga mahasiswa disarankan untuk aktif memeriksa informasi pada laman resmi Polibatam (Kalender_Akademik_2026-2027_Teks.pdf, hal. 2).","AAS) dan libur akademik:
+
+### 1. Semester Ganjil 2026/2027
+Periode AAS Semester Ganjil berlangsung pada **11–22 Januari 2027** (Kalender_Akademik_2026-2027_Teks.pdf:1;Kalender_Akademik_2026-2027_Teks.pdf:2;PEDOMAN PEMBELAJARAN.pdf:24",289.61,289.66,0,0,2026-11-06
+Q021,"Berdasarkan dokumen yang tersedia, tidak ditemukan rincian mengenai daftar prinsip dasar pembelajaran yang spesifik dalam ""Pedoman Pembelajaran Mahasiswa Politeknik Negeri Batam"".
+
+Dokumen tersebut menjelaskan bahwa Panduan Pembelajaran Politeknik Negeri Batam tahun 2025 memuat instrumen baru untuk mengantisipasi perubahan dan dinamika industri, yang mencakup:
+
+- Pola pembelajaran kombinasi
+- Rekognisi pembelajaran lampau
+- Merdeka belajar
+- Pembelajaran berbasis masalah/proyek/produk
+- Aktivitas kemahasiswaan
+
+**(PEDOMAN PEMBELAJARAN.pdf, hal. 6)**
+
+Sebagai catatan, istilah ""prinsip-prinsip dasar pembelajaran"" disebutkan dalam dokumen kurikulum sebagai salah satu capaian pembelajaran untuk mata kuliah tertentu, namun bukan sebagai prinsip yang ditetapkan dalam pedoman pembelajaran institusi secara umum **(Kurikulum-TP.pdf, hal. 20)**.",PEDOMAN PEMBELAJARAN.pdf:6;Kurikulum-TP.pdf:20,297.78,297.81,0,0,2026-11-06
+Q022,"Pembagian tanggung jawab antara dosen dan mahasiswa dalam proses pembelajaran di Politeknik Negeri Batam diatur secara sistematis untuk memastikan kegiatan kurikuler berjalan dengan terstruktur. Berikut adalah rincian tanggung jawab masing-masing pihak:
+
+### Tanggung Jawab Dosen
+Dosen memiliki peran sebagai pengarah dan fasilitator dalam proses pembelajaran, dengan tanggung jawab utama meliputi:
+
+1. **Perencanaan dan Pelaksanaan Pembelajaran**
+   Dosen atau tim dosen pengampu bertanggung jawab menyusun Rencana Pembelajaran Semester (RPS) dan melaksanakan kegiatan pembelajaran sesuai dengan metode, strategi, dan bentuk pembelajaran yang telah ditetapkan **(PEDOMAN PEMBELAJARAN.pdf, hal. 14)**.
+2. **Bimbingan Akademik (Perwalian)**
+   Dosen wali wajib memberikan bimbingan akademik dan non-akademik kepada mahasiswa minimal dua kali dalam setiap semester, membantu mahasiswa menyusun rencana studi, serta menumbuhkan kreativitas dan kebiasaan belajar efektif **(PEDOMAN PEMBELAJARAN.pdf, hal. 25)**.
+3. **Bimbingan Penyelesaian Studi**
+   Dosen bertanggung jawab memberikan bimbingan kepada mahasiswa dalam penyelesaian studi pada program studi yang diikutinya **(PEDOMAN PEMBELAJARAN.pdf, hal. 41)**.
+4. **Pengelolaan Beban Kerja**
+   Dalam lingkup jurusan, pimpinan jurusan (yang mengelola dosen) bertanggung jawab mengevaluasi kinerja dan beban kerja dosen, serta menugaskan dosen untuk kegiatan pembelajaran **(SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf, hal. 21)**.
+
+### Tanggung Jawab Mahasiswa
+Mahasiswa memiliki tanggung jawab untuk aktif dalam proses pendidikan dan mematuhi norma yang berlaku, dengan rincian sebagai berikut:
+
+1. **Kewajiban Belajar dan Etika**
+   Mahasiswa wajib belajar dengan tekun untuk mencapai prestasi tinggi, menghargai kaidah ilmu pengetahuan, menjaga suasana akademik yang kondusif, serta menjaga nama baik institusi **(PEDOMAN PEMBELAJARAN.pdf, hal. 41)**.
+2. **Kepatuhan terhadap Jadwal dan Aturan**
+   Mahasiswa wajib mengikuti perkuliahan sesuai jadwal dan metode yang ditetapkan, serta mematuhi norma dan aturan yang berlaku, baik dalam pedoman pembelajaran maupun kesepakatan dengan dosen pengajar **(PEDOMAN PEMBELAJARAN.pdf, hal. 25)**.
+3. **Administrasi dan Portofolio**
+   Mahasiswa wajib mengisi kuesioner umpan balik proses belajar mengajar sebelum asesmen tengah dan akhir semester, serta memperbaharui portofolio pelaksanaan PBL dan aktivitas lainnya setiap semester melalui *talent hub* Polibatam. Kelalaian dalam hal ini dapat mengakibatkan mahasiswa tidak dapat mengakses nilai akhir **(PEDOMAN PEMBELAJARAN.pdf, hal. 25)**.
+4. **Interaksi dengan Dosen Wali**
+   Mahasiswa wajib menaati jadwal perwalian yang tertulis dalam kalender akademik dan memperhatikan informasi dari dosen wali mengenai prestasi akademik serta batas waktu studi **(PEDOMAN PEMBELAJARAN.pdf, hal. 25)**.
+5. **Pemeliharaan Lingkungan**
+   Mahasiswa bertanggung jawab ikut memelihara sarana dan prasarana serta menjaga kebersihan, ketertiban, dan keamanan di lingkungan kampus **(PEDOMAN PEMBELAJARAN.pdf, hal. 41)**.
+
+### Kesimpulan
+Proses pembelajaran merupakan kolaborasi terstruktur di mana dosen berperan sebagai perencana dan pembimbing, sementara mahasiswa berperan sebagai subjek aktif yang wajib mengikuti arahan, memenuhi kewajiban administratif, serta menjaga etika dan lingkungan akademik. Keduanya terikat pada aturan yang ditetapkan dalam pedoman pembelajaran untuk mencapai capaian pembelajaran yang diinginkan.",PEDOMAN PEMBELAJARAN.pdf:14;PEDOMAN PEMBELAJARAN.pdf:25;PEDOMAN PEMBELAJARAN.pdf:41;SALINAN PERDIR 017 RENSTRA JURUSAN TEKNIK INFORMATIKA POLIBATAM 2025-2029.pdf:21,298.35,298.37,0,0,2026-11-06
+Q023,"Ketentuan mengenai pelaksanaan perkuliahan dan kehadiran mahasiswa diatur sebagai berikut:
+
+### Pelaksanaan Perkuliahan
+1. **Waktu Pelaksanaan**
+   Perkuliahan dilaksanakan pada hari Senin sampai Jumat, pukul 07.00 hingga 23.00 WIB. Namun, perkuliahan dapat diselenggarakan di luar jadwal tersebut berdasarkan kesepakatan antara mahasiswa atau perwakilannya dengan dosen **(PEDOMAN PEMBELAJARAN.pdf, hal. 15)**.
+2. **Metode dan Ruang Belajar**
+   Proses pembelajaran dilakukan secara sistematis dan terstruktur melalui mata kuliah dengan beban belajar yang terukur (SKS). Pelaksanaan pembelajaran dapat menggunakan variasi ruang belajar, yaitu:
+   - **RB1 (Tatap muka):** Sinkron luring di kelas/laboratorium/workshop.
+   - **RB2 (Tatap maya/daring):** Sinkron daring melalui media seperti *video conference*.
+   - **RB3 (Mandiri):** Asinkron (belajar kapan saja dan di mana saja).
+   - **RB4 (Kolaboratif):** Asinkron bersama narasumber lain (mahasiswa, dosen, praktisi) **(PEDOMAN PEMBELAJARAN.pdf, hal. 14, 15)**.
+3. **Kewajiban Mahasiswa**
+   - Mengikuti perkuliahan sesuai jadwal dan metode yang ditetapkan.
+   - Mengisi kuesioner umpan balik proses belajar mengajar sebelum asesmen tengah dan akhir semester.
+   - Memperbaharui portofolio pelaksanaan PBL dan aktivitas lainnya setiap semester melalui *talent hub* Polibatam. Kelalaian dalam dua hal terakhir dapat mengakibatkan mahasiswa tidak dapat mengakses nilai akhir **(PEDOMAN PEMBELAJARAN.pdf, hal. 15)**.
+
+### Ketentuan Kehadiran
+1. **Alasan Ketidakhadiran**
+   Ketidakhadiran hanya diizinkan karena alasan sakit, kecelakaan, atau keperluan penting yang mendesak yang keabsahannya akan diverifikasi **(PEDOMAN PEMBELAJARAN.pdf, hal. 16)**.
+2. **Prosedur Pelaporan**
+   - Ketidakhadiran wajib diinformasikan kepada Tata Usaha (TU), Wali Akademik, atau Dosen Pengajar sesuai kebijakan jurusan.
+   - Informasi ke TU harus berbentuk surat maksimal 1 minggu setelah ketidakhadiran dengan melampirkan bukti seperti surat dokter atau surat tugas.
+   - Jika tidak ada bukti resmi, mahasiswa dapat membuat surat keterangan sendiri yang memuat informasi lengkap (nama, NIM, dosen wali, mata kuliah, periode, penyebab, dan nomor kontak pihak yang bisa dikonfirmasi) **(PEDOMAN PEMBELAJARAN.pdf, hal. 16)**.
+3. **Sanksi Ketidakhadiran**
+   - Ketidakhadiran yang tidak dapat diverifikasi dianggap sebagai ketidakhadiran tanpa izin.
+   - Jurusan akan menerbitkan Surat Peringatan (SP) I, II, dan III untuk ketidakhadiran tanpa izin sebesar 5%, 20%, dan 40% dari total sesi dalam satu semester.
+   - Jika SP III tidak ditanggapi dalam 3 minggu, mahasiswa dianggap mengundurkan diri dan akan diterbitkan surat pemberhentian **(PEDOMAN PEMBELAJARAN.pdf, hal. 16)**.",PEDOMAN PEMBELAJARAN.pdf:15;PEDOMAN PEMBELAJARAN.pdf:16,359.67,359.76,0,0,2026-11-06
+Q024,"Mekanisme evaluasi hasil belajar mahasiswa diatur sebagai bagian dari standar penilaian untuk mengukur kinerja pembelajaran dan ketercapaian capaian pembelajaran lulusan (CPL) **(PEDOMAN PEMBELAJARAN.pdf, hal. 28)**.
+
+Berikut adalah penjelasan mengenai mekanisme dan komponen penilaian tersebut:
+
+### Mekanisme Evaluasi
+1. **Sifat Penilaian**: Penilaian dilakukan secara valid, reliabel, transparan, akuntabel, berkeadilan, objektif, dan edukatif **(PEDOMAN PEMBELAJARAN.pdf, hal. 28)**.
+2. **Waktu Pelaksanaan**: Evaluasi dilakukan selama satu semester, dengan jadwal yang terjadwal secara kalender akademik, yaitu asesmen tengah semester dan asesmen akhir semester **(PEDOMAN PEMBELAJARAN.pdf, hal. 28, 29)**.
+3. **Jadwal**: Jadwal rinci disusun oleh jurusan, program studi, atau dosen dan diterbitkan minimal 1 minggu sebelum pelaksanaan evaluasi **(PEDOMAN PEMBELAJARAN.pdf, hal. 29)**.
+4. **Rekapitulasi**: Keseluruhan hasil penilaian direkapitulasi menjadi satu nilai akhir bagi setiap mahasiswa untuk mata kuliah tersebut **(PEDOMAN PEMBELAJARAN.pdf, hal. 29)**.
+
+### Komponen dan Metode Penilaian
+Penilaian hasil belajar mahasiswa terdiri dari dua bentuk utama:
+
+1. **Penilaian Formatif**
+   Bertujuan untuk memantau perkembangan belajar mahasiswa, memberikan umpan balik agar mahasiswa memenuhi capaian pembelajaran, serta memperbaiki proses pembelajaran **(PEDOMAN PEMBELAJARAN.pdf, hal. 28)**.
+
+2. **Penilaian Sumatif**
+   Bertujuan untuk menilai pencapaian hasil belajar sebagai dasar penentuan kelulusan mata kuliah dan program studi **(PEDOMAN PEMBELAJARAN.pdf, hal. 28)**. Metode yang digunakan meliputi:
+   - Ujian tertulis, ujian lisan, penilaian proyek, penilaian tugas, uji kompetensi, atau bentuk lain yang ditetapkan dosen/program studi **(PEDOMAN PEMBELAJARAN.pdf, hal. 28)**.
+   - Penilaian dapat dilakukan secara kuantitatif (menghitung jawaban benar/salah) atau menggunakan rubrik **(PEDOMAN PEMBELAJARAN.pdf, hal. 28)**.
+   - Rubrik digunakan untuk mengukur kinerja mahasiswa berdasarkan deskripsi spesifik pada aspek tertentu **(PEDOMAN PEMBELAJARAN.pdf, hal. 28)**.
+   - Komponen penguasaan *personal* dan *interpersonal skills* juga termasuk dalam penilaian akhir mata kuliah **(PEDOMAN PEMBELAJARAN.pdf, hal. 29)**.
+
+### Penentuan Nilai Akhir
+Dosen menentukan nilai akhir dalam bentuk huruf dan angka berdasarkan data evaluasi keseluruhan dengan ketentuan sebagai berikut:
+
+| Nilai Huruf | Rentang Nilai Angka | Nilai Angka |
+| :--- | :--- | :--- |
+| A | ≥ 85.00 | 4.00 |
+| A- | 80.00 – 84.99 | 3.70 |
+| B+ | 75.00 – 79.99 | 3.40 |
+| B | 70.00 – 74.99 | 3.00 |
+| B- | 65.00 – 69.99 | 2.70 |
+| C+ | 60.00 – 64.99 | 2.40 |
+| C | 55.00 – 59.99 | 2.00 |
+| C- | 50.00 – 54.99 | 1.70 |
+| D+ | 45.00 – 49.99 | 1.40 |
+
+*(Sumber: PEDOMAN PEMBELAJARAN.pdf, hal. 29)*",CPL) **(PEDOMAN PEMBELAJARAN.pdf:28;PEDOMAN PEMBELAJARAN.pdf:28;PEDOMAN PEMBELAJARAN.pdf:29;menghitung jawaban benar/salah) atau menggunakan rubrik **(PEDOMAN PEMBELAJARAN.pdf:28;Sumber: PEDOMAN PEMBELAJARAN.pdf:29,574.34,574.52,0,0,2026-11-06
+Q025,"Berikut adalah ketentuan yang berlaku terkait perubahan jadwal perkuliahan dan ketidakhadiran mahasiswa:
+
+### Perubahan Jadwal Perkuliahan
+Perkuliahan pada dasarnya dilaksanakan pada hari Senin sampai Jumat pukul 07.00 – 23.00 WIB **(PEDOMAN PEMBELAJARAN.pdf, hal. 25)**. Namun, terdapat ketentuan khusus jika diperlukan perubahan jadwal:
+1. Perkuliahan dapat diselenggarakan di luar jadwal standar tersebut berdasarkan kesepakatan antara mahasiswa atau perwakilannya dengan dosen pengajar **(PEDOMAN PEMBELAJARAN.pdf, hal. 25)**.
+2. Mahasiswa wajib mengikuti perkuliahan sesuai dengan jadwal dan metode pembelajaran yang telah ditetapkan **(PEDOMAN PEMBELAJARAN.pdf, hal. 25)**.
+
+### Ketentuan Ketidakhadiran Mahasiswa
+Jika mahasiswa tidak dapat mengikuti pembelajaran, berlaku aturan sebagai berikut:
+1. **Alasan yang diizinkan:** Ketidakhadiran hanya diperbolehkan karena alasan sakit, kecelakaan, atau keperluan penting yang mendesak yang keabsahannya dapat diverifikasi **(PEDOMAN PEMBELAJARAN.pdf, hal. 26)**.
+2. **Kewajiban pelaporan:** Mahasiswa wajib menginformasikan ketidakhadiran kepada Tata Usaha (TU), Wali Akademik, atau Dosen Pengajar sesuai kebijakan jurusan masing-masing **(PEDOMAN PEMBELAJARAN.pdf, hal. 26)**.
+3. **Bukti ketidakhadiran:**
+   - Informasi ke TU wajib berbentuk surat maksimal 1 minggu setelah ketidakhadiran **(PEDOMAN PEMBELAJARAN.pdf, hal. 26)**.
+   - Harus disertai surat dokter, surat tugas, atau bukti lain yang dapat diverifikasi kebenarannya **(PEDOMAN PEMBELAJARAN.pdf, hal. 26)**.
+   - Jika menggunakan bukti mandiri, harus memuat informasi: Nama, NIM, dosen wali, mata kuliah, periode ketidakhadiran, penyebab, pernyataan kebenaran, dan nomor kontak pihak yang bisa dikonfirmasi **(PEDOMAN PEMBELAJARAN.pdf, hal. 26)**.
+4. **Sanksi:**
+   - Ketidakhadiran yang tidak dapat diverifikasi dianggap sebagai ketidakhadiran tanpa izin **(PEDOMAN PEMBELAJARAN.pdf, hal. 26)**.
+   - Jurusan akan menerbitkan Surat Peringatan (SP) I, II, dan III untuk ketidakhadiran tanpa izin sebesar 5%, 20%, dan 40% dari total sesi dalam satu semester **(PEDOMAN PEMBELAJARAN.pdf, hal. 26)**.
+   - Jika SP III tidak ditanggapi dalam waktu 3 minggu, mahasiswa dianggap mengundurkan diri **(PEDOMAN PEMBELAJARAN.pdf, hal. 26)**.",PEDOMAN PEMBELAJARAN.pdf:25;PEDOMAN PEMBELAJARAN.pdf:26,354.05,354.17,0,0,2026-11-06
+Q026,"Capaian Pembelajaran Lulusan (CPL) untuk program studi Teknologi Permainan (TP) mencakup kesatuan kompetensi sikap, keterampilan, dan pengetahuan sebagai berikut:
+
+1. Lulusan mampu berkarir dan berkontribusi secara aktif dan inovatif dalam mengidentifikasi serta menyelesaikan berbagai masalah di bidang teknologi gim, baik di industri maupun masyarakat, melalui penerapan teknologi dengan tetap mempraktikkan iman, takwa, berakhlak mulia, dan karakter sesuai nilai-nilai Pancasila **(Kurikulum-TP.pdf, hal. 2)**.
+
+2. Lulusan mampu mengembangkan keilmuan, relevansi, kemampuan profesional, dan interpersonal melalui riset aplikatif, aktivitas profesional, serta pendidikan sepanjang hayat. Selain itu, lulusan mampu mengembangkan gim sesuai teknologi mutakhir dengan merujuk pada aspek teknik, ekonomi, sosial, ekologi, keselamatan kerja, dan lingkungan (K3L) yang berlaku **(Kurikulum-TP.pdf, hal. 2)**.
+
+3. Lulusan mampu menghasilkan produk dan jasa di bidang teknologi gim secara kreatif, inovatif, dan profesional sesuai perkembangan teknologi. Hal ini dilakukan dengan menggunakan pola berpikir kritis, konsep teoritis bidang pengetahuan gim secara umum, serta keterampilan menyelesaikan permasalahan teknologi permainan berdasarkan analisis data yang diperlukan pada tahap merancang, merealisasikan, dan mengujinya sesuai aturan serta standar yang berlaku **(Kurikulum-TP.pdf, hal. 2)**.",Kurikulum-TP.pdf:2;K3L) yang berlaku **(Kurikulum-TP.pdf:2,459.88,460.09,0,0,2026-11-06
+Q027,"Berdasarkan dokumen yang tersedia, berikut adalah mata kuliah yang tercantum pada bagian awal silabus Teknologi Permainan:
+
+1. **Ide Kreatif**
+   - Kode: TP101
+   - SKS: 4 sks
+   (Kurikulum-TP.pdf, hal. 3)
+
+2. **Pengantar Gim**
+   - Kode: TP102
+   - SKS: 2 sks
+   (Kurikulum-TP.pdf, hal. 3)
+
+Sebagai catatan, dokumen tersebut menyajikan daftar silabus secara berurutan, di mana mata kuliah ""Ide Kreatif"" merupakan mata kuliah pertama yang dijabarkan dalam bagian silabus (Kurikulum-TP.pdf, hal. 3).",Kurikulum-TP.pdf:3,375.11,375.18,0,0,2026-11-06
+Q028,"Berdasarkan dokumen kurikulum TP, berikut adalah tujuan pembelajaran (Capaian Pembelajaran Mata Kuliah) untuk mata kuliah tersebut:
+
+**1. Ide Kreatif (Kode: TP101)**
+Tujuan pembelajaran mata kuliah ini adalah:
+1. Mengkorelasikan elemen-elemen permainan.
+2. Menelaah kekuatan dan kelemahan dari berbagai permainan.
+3. Merancang ide-ide kreatif yang unik dan inovatif dalam pengembangan permainan non-digital dengan memanfaatkan sumber daya fisik yang tersedia.
+4. Menata konsep dasar dalam desain permainan, termasuk tujuan, mekanisme, dan alur cerita permainan.
+5. Menguji permainan non-digital yang dirancang, baik dari segi konsep keseluruhan maupun implementasinya.
+(Kurikulum-TP.pdf, hal. 3)
+
+**2. Pengantar Gim (Kode: TP102)**
+Dokumen yang tersedia mencantumkan informasi mengenai kode dan SKS untuk mata kuliah Pengantar Gim, namun tidak memuat rincian mengenai tujuan pembelajarannya.
+(Kurikulum-TP.pdf, hal. 3)",Kurikulum-TP.pdf:3,305.51,305.56,0,0,2026-11-06

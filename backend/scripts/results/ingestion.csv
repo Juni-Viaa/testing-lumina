@@ -1,0 +1,10 @@
+environment,device,cpu_model,ram_gb,model,batch_size,load_s,one_by_one_s_per_chunk,batched_s_per_chunk,n_chunks,dense_hit7,note
+local,cpu,AMD Ryzen 3 3250U,12,e5-large,16,10.1,0.503,5.619,18,,chunk_size=2560
+local,cpu,AMD Ryzen 3 3250U,12,e5-large,32,8.98,0.508,6.337,18,,chunk_size=2560
+colab,cpu,Intel(R) Xeon(R) CPU @ 2.20GHz,13,e5-small,16,11.94,0.318,0.547,18,,chunk_size=2560
+colab,cpu,Intel(R) Xeon(R) CPU @ 2.20GHz,13,e5-base,16,4.57,1.11,1.661,18,,chunk_size=2560
+colab,cpu,Intel(R) Xeon(R) CPU @ 2.20GHz,13,e5-large,16,5.45,3.902,6.527,18,,chunk_size=2560
+colab,cuda,Tesla T4,13,e5-small,16,9.53,0.015,0.01,18,,chunk_size=2560
+colab,cuda,Tesla T4,13,e5-base,16,10.02,0.023,0.025,18,,chunk_size=2560
+colab,cuda,Tesla T4,13,e5-large,16,17.28,0.079,0.085,18,,chunk_size=2560
+lumina_server_gpu,cuda,Intel(R) Core(TM) i3-10105F CPU @ 3.70GHz,15.01,intfloat/multilingual-e5-large,2,7.630185,0.082194,0.071313,1092,0.888889,GPU NVIDIA GeForce GTX 1660 SUPER

@@ -1,0 +1,3 @@
+environment,device,cpu_model,ram_gb,model,batch_size,load_s,one_by_one_s_per_chunk,batched_s_per_chunk,n_chunks,dense_hit7,note
+lumina_pc_before,cpu,AMD Ryzen 3 3250U,12,intfloat/multilingual-e5-large,32,79.85,2.21,39.88,18,0.85,sebelum perbaikan batch_size default library 32
+lumina_pc_after,cpu,AMD Ryzen 3 3250U,12,intfloat/multilingual-e5-large,16,31.66,0.72,11.60,18,0.85,sesudah perbaikan batch_size=16

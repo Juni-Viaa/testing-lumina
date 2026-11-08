@@ -2,7 +2,6 @@ from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseU
 from django.contrib.postgres.indexes import GinIndex
 from django.contrib.postgres.search import SearchVectorField
 from django.db import models
-from pgvector.django import VectorField
 
 
 class UserManager(BaseUserManager):
@@ -127,8 +126,7 @@ class Chunk(models.Model):
     chunk_text = models.TextField()
     page = models.IntegerField(null=True, blank=True)
     metadata = models.JSONField(default=dict, blank=True)
-    # 1024 dimensi -> model 'intfloat/multilingual-e5-large'
-    embedding = VectorField(dimensions=1024, null=True, blank=True)
+    faiss_index_path = models.CharField(max_length=255, null=True, blank=True)
     search_vector = SearchVectorField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

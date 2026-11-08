@@ -12,6 +12,11 @@ logger = logging.getLogger(__name__)
 
 def warmup_models():
     """Load embedding and reranker models into memory at startup."""
+    # Setup Torch multi-threading for CPU operations
+    import torch
+    torch.set_num_threads(4)  # Use 4 threads (matches logical CPU count)
+    torch.set_num_interop_threads(4)
+    
     # Ensure cache dir exists
     cache_dir = os.getenv("EMBEDDING_MODEL_CACHE_DIR", "/app/models")
     os.makedirs(cache_dir, exist_ok=True)

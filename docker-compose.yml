@@ -47,19 +47,19 @@ services:
       - ./models:/app/models
       - backend_app_data:/app/backend
     ports:
-      - "8000:8000"
+      - "8001:8000"
     env_file:
       - ./backend/.env
     environment:
       DJANGO_ENV: development
       DJANGO_DEBUG: "True"
-      DJANGO_ALLOWED_HOSTS: "*"
+      DJANGO_ALLOWED_HOSTS: "localhost,127.0.0.1,backend"
       DB_NAME: lumina
       DB_USER: lumina
       DB_PASSWORD: lumina_secret
       DB_HOST: postgres
       DB_PORT: "5432"
-      CORS_ALLOWED_ORIGINS: http://localhost:3000,http://127.0.0.1:3000
+      CORS_ALLOWED_ORIGINS: http://localhost:3000,http://127.0.0.1:3000,http://localhost:3001,http://127.0.0.1:3001
       CELERY_BROKER_URL: redis://redis:6379/0
       CELERY_RESULT_BACKEND: redis://redis:6379/0
       CELERY_TASK_TIME_LIMIT: ${CELERY_TASK_TIME_LIMIT:-3900}
@@ -103,7 +103,7 @@ services:
     environment:
       DJANGO_ENV: development
       DJANGO_DEBUG: "True"
-      DJANGO_ALLOWED_HOSTS: "*"
+      DJANGO_ALLOWED_HOSTS: "localhost,127.0.0.1,backend"
       DB_NAME: lumina
       DB_USER: lumina
       DB_PASSWORD: lumina_secret
@@ -116,10 +116,6 @@ services:
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
       VISION_ENABLED: ${VISION_ENABLED:-False}
       GEMINI_VISION_MODEL: ${GEMINI_VISION_MODEL:-gemini-3.1-flash-lite}
-      OCR_USE_DOC_ORIENTATION: ${OCR_USE_DOC_ORIENTATION:-False}
-      OCR_USE_DOC_UNWARPING: ${OCR_USE_DOC_UNWARPING:-False}
-      OCR_USE_TEXTLINE_ORIENTATION: ${OCR_USE_TEXTLINE_ORIENTATION:-True}
-      VISION_DOCX_MAX_IMAGES: ${VISION_DOCX_MAX_IMAGES:-15}
       HF_TOKEN: ${HF_TOKEN:-}
       HF_HOME: /app/models/huggingface
       TRANSFORMERS_CACHE: /app/models/huggingface/hub
@@ -154,7 +150,7 @@ services:
     environment:
       DJANGO_ENV: development
       DJANGO_DEBUG: "True"
-      DJANGO_ALLOWED_HOSTS: "*"
+      DJANGO_ALLOWED_HOSTS: "localhost,127.0.0.1,backend"
       DB_NAME: lumina
       DB_USER: lumina
       DB_PASSWORD: lumina_secret
@@ -163,7 +159,6 @@ services:
       CELERY_BROKER_URL: redis://redis:6379/0
       CELERY_RESULT_BACKEND: redis://redis:6379/0
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
-      # Opt-in: ketika True, gambar dokumen dikirim ke Gemini Vision.
       VISION_ENABLED: ${VISION_ENABLED:-False}
       GEMINI_VISION_MODEL: ${GEMINI_VISION_MODEL:-gemini-3.1-flash-lite}
       HF_TOKEN: ${HF_TOKEN:-}
@@ -193,13 +188,11 @@ services:
       - /app/node_modules
       - /app/.next
     ports:
-      - "3000:3000"
+      - "3001:3000"
     environment:
       NODE_ENV: development
-      NEXT_PUBLIC_API_URL: http://localhost:8000
-      NEXT_PUBLIC_API_BASE_URL: http://localhost:8000/api
-    depends_on:
-      - backend
+      NEXT_PUBLIC_API_URL: http://localhost:8001
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8001/api
 
 volumes:
   pgvector_data:

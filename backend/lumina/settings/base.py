@@ -1,53 +1,16 @@
-"""
-Base settings untuk proyek Lumina.
-
-Berisi konfigurasi yang sama untuk semua environment (development & production).
-Environment-specific settings ada di development.py dan production.py.
-"""
-from pathlib import Path
 import os
-import dotenv
+from pathlib import Path
+
+from django.conf.global_settings import *  # noqa: F401,F403
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # Load environment variables from .env file if exists
-dotenv.load_dotenv(BASE_DIR / ".env")
-
-# ── Database ──────────────────────────────────────────────────────────
-# Gunakan SQLite untuk development; override via env DB_ENGINE=postgresql jika diperlukan.
-if os.environ.get("DB_ENGINE", "sqlite") == "postgresql":
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": os.environ.get("DB_NAME", "lumina"),
-            "USER": os.environ.get("DB_USER", "lumina"),
-            "PASSWORD": os.environ.get("DB_PASSWORD", "lumina_secret"),
-            "HOST": os.environ.get("DB_HOST", "127.0.0.1"),
-            "PORT": os.environ.get("DB_PORT", "5433"),
-        }
-    }
-else:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
-        }
-    }
-
-
-def _get_env_or_raise(name: str, context: str = "") -> str:
-    value = os.environ.get(name)
-    if not value:
-        raise RuntimeError(f"Missing required environment variable: {name}{context}")
-    return value
-
-# ── Security ────────────────────────────────────────────────────────
-SECRET_KEY = _get_env_or_raise("DJANGO_SECRET_KEY", " (security critical)")
-
-DEBUG = False
-
-ALLOWED_HOSTS = [host for host in os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",") if host]
+dotenv_path = BASE_DIR / ".env"
+if dotenv_path.exists():
+    import dotenv
+    dotenv.load_dotenv(dotenv_path)
 
 # ── Application definition ──────────────────────────────────────────────────
 INSTALLED_APPS = [
@@ -106,16 +69,38 @@ ASGI_APPLICATION = "lumina.asgi.application"
 AUTH_USER_MODEL = "core.User"
 
 # ── Database ────────────────────────────────────────────────────────────────
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": _get_env_or_raise("DB_NAME", " (database name required)"),
-        "USER": _get_env_or_raise("DB_USER", " (database username required)"),
-        "PASSWORD": _get_env_or_raise("DB_PASSWORD", " (database password required)"),
-        "HOST": os.environ.get("DB_HOST", "127.0.0.1"),
-        "PORT": os.environ.get("DB_PORT", "5433"),
+if os.environ.get("DB_ENGINE", "postgresql") == "sqlite":
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
     }
-}
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.environ.get("DB_NAME", "lumina"),
+            "USER": os.environ.get("DB_USER", "lumina"),
+            "PASSWORD": os.environ.get("DB_PASSWORD", "lumina_secret"),
+            "HOST": os.environ.get("DB_HOST", "127.0.0.1"),
+            "PORT": os.environ.get("DB_PORT", "5433"),
+        }
+    }
+
+
+def _get_env_or_raise(name: str, context: str = "") -> str:
+    value = os.environ.get(name)
+    if not value:
+        raise RuntimeError(f"Missing required environment variable: {name}{context}")
+    return value
+
+# ── Security ────────────────────────────────────────────────────────
+SECRET_KEY = _get_env_or_raise("DJANGO_SECRET_KEY", " (security critical)")
+
+DEBUG = False
+
+ALLOWED_HOSTS = [host for host in os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",") if host]
 
 # ── Password validation ─────────────────────────────────────────────────────
 AUTH_PASSWORD_VALIDATORS = [
@@ -147,28 +132,30 @@ STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # ── Media files (uploads) ───────────────────────────────────────────────────
-MEDIA_URL = "/media/"
+MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
-# ── Django REST Framework ───────────────────────────────────────────────────
+# ── Storage (Django 4.2+ compatible) ───────────────────────────────────────
+# Use STORAGES instead of DEFAULT_FILE_STORAGE
+STORAGES = {
+    "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
+    "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage"},
+}
+
+# ── Default primary key field type ──────────────────────────────────────────
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# ── DRF ─────────────────────────────────────────────────────────────────────
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
-        "rest_framework.authentication.SessionAuthentication",
         "rest_framework.authentication.TokenAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
     ],
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.IsAuthenticated",
     ],
-    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
-    "PAGE_SIZE": 20,
-    "DEFAULT_RENDERER_CLASSES": [
-        "rest_framework.renderers.JSONRenderer",
-    ],
-    "DEFAULT_THROTTLE_CLASSES": [
-        "rest_framework.throttling.ScopedRateThrottle",
-    ],
     "DEFAULT_THROTTLE_RATES": {
-        "upload": "20/hour",
+        "upload": os.environ.get("UPLOAD_THROTTLE_RATE", "30/hour"),
     },
 }
 
@@ -186,13 +173,3 @@ CORS_ALLOW_CREDENTIALS = True
 
 # ── Email ───────────────────────────────────────────────────────────────────
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
-# ── Celery ─────────────────────────────────────────────────────────────────
-CELERY_BROKER_URL = _get_env_or_raise("CELERY_BROKER_URL", " (Redis URL required for background tasks)")
-CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND", CELERY_BROKER_URL)
-CELERY_TASK_TRACK_STARTED = True
-CELERY_TASK_TIME_LIMIT = int(os.environ.get("CELERY_TASK_TIME_LIMIT", "3900"))
-CELERY_TASK_SOFT_TIME_LIMIT = int(os.environ.get("CELERY_TASK_SOFT_TIME_LIMIT", "3600"))
-
-# ── Default primary key field type ──────────────────────────────────────────
-DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

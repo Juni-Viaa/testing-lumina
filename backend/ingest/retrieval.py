@@ -1,8 +1,8 @@
 """
-retrieval.py — pgvector similarity search + sparse FTS search + RRF fusion + BGE reranking + RAG generation
+retrieval.py — FAISS similarity search + sparse FTS search + RRF fusion + BGE reranking + RAG generation
 (LUMINA-9, LUMINA-10, LUMINA-11).
 
-Native pgvector similarity search on the `chunks.embedding` column (dense),
+FAISS cosine similarity search over `chunks.faiss_index_path` (dense),
 PostgreSQL FTS on the `chunks.search_vector` column (sparse), Reciprocal Rank
 Fusion (RRF k=60) to merge top 20 candidates, and BGE Reranker v2 M3 to produce
 the top 7 chunks for the LLM context.
@@ -10,9 +10,14 @@ the top 7 chunks for the LLM context.
 
 from __future__ import annotations
 
+import faiss
+import google.generativeai as genai
+import json
 import logging
+import numpy as np
 import re
 import time
+from datetime import datetime, timezone
 from typing import Any
 
 from django.contrib.postgres.search import SearchQuery, SearchRank
@@ -48,7 +53,7 @@ def _similarity_search(
     question_vector: list[float], top_k: int, user_id: int | None = None
 ) -> list[Chunk]:
     """
-    Native pgvector similarity search (cosine distance) over chunks.embedding.
+    FAISS cosine similarity search over stored vectors with metadata filtering.
     Returns the top-k Chunk objects ordered by similarity.
 
     Metadata filtering WAJIB (kontrol keamanan):
@@ -56,19 +61,31 @@ def _similarity_search(
       diunggah oleh admin/staff (diperlakukan sebagai knowledge base bersama).
     - Hanya dokumen dengan status `indexed` yang dipertimbangkan.
     """
-    from pgvector.django import CosineDistance
+    from .faiss_helper import load_faiss_index, search_faiss
 
-    qs = Chunk.objects.filter(embedding__isnull=False, deleted_at__isnull=True).select_related("document")
+    index, mapping = load_faiss_index()
+    if index is None or not mapping:
+        return []
+
+    # Get more candidates from FAISS since we will filter by metadata in DB
+    candidate_k = min(len(mapping), max(top_k * 5, 50))
+    chunk_ids = search_faiss(index, mapping, question_vector, top_k=candidate_k)
+    if not chunk_ids:
+        return []
+
+    # Filter chunks with metadata permissions
+    qs = Chunk.objects.filter(id__in=chunk_ids, deleted_at__isnull=True).select_related("document")
     if user_id is not None:
         qs = qs.filter(
             Q(document__user_id=user_id) | Q(document__user__is_staff=True)
         )
-    qs = (
-        qs.filter(document__status=DocumentModel.Status.INDEXED, document__deleted_at__isnull=True)
-        .annotate(distance=CosineDistance("embedding", question_vector))
-        .order_by("distance")[:top_k]
-    )
-    return list(qs)
+    qs = qs.filter(document__status=DocumentModel.Status.INDEXED, document__deleted_at__isnull=True)
+
+    # Reorder according to FAISS ranking
+    chunks_dict = {c.id: c for c in qs}
+    ordered_chunks = [chunks_dict[cid] for cid in chunk_ids if cid in chunks_dict]
+
+    return ordered_chunks[:top_k]
 
 
 def _expand_visual_pairs(chunks: list[Chunk], user_id: int) -> list[Chunk]:
@@ -370,12 +387,37 @@ def run_rag_query(query_id: int, question: str, top_k: int | None = None) -> dic
         ("system", config.RAG_SYSTEM_PROMPT),
         ("human", "{question}"),
     ])
-    chain = prompt | llm | StrOutputParser()
+    
+    gen_start = time.time()
     try:
-        answer_text = _invoke_llm_with_retry(
-            chain,
-            {"context": context, "question": question},
-        )
+        messages = prompt.invoke({"context": context, "question": question})
+        
+        # Count input tokens BEFORE LLM call
+        input_tokens = 0
+        try:
+            genai.configure(api_key=config.GEMINI_API_KEY)
+            model = genai.GenerativeModel(config.GEMINI_MODEL)
+            full_prompt = config.RAG_SYSTEM_PROMPT.format(context=context) + "\n" + question
+            input_tokens = model.count_tokens(full_prompt).total_tokens
+        except Exception:
+            input_tokens = 0  # ponytail: fallback 0 if google.generativeai unavailable
+        
+        response = llm.invoke(messages)
+        raw_content = response.content
+        if isinstance(raw_content, list):
+            answer_text = "".join(part if isinstance(part, str) else str(part.get("text", "") if isinstance(part, dict) else part) for part in raw_content)
+        else:
+            answer_text = str(raw_content or "")
+        gen_time_ms = round((time.time() - gen_start) * 1000)
+        
+        # Count output tokens AFTER LLM call
+        output_tokens = 0
+        try:
+            genai.configure(api_key=config.GEMINI_API_KEY)
+            model = genai.GenerativeModel(config.GEMINI_MODEL)
+            output_tokens = model.count_tokens(answer_text).total_tokens
+        except Exception:
+            output_tokens = 0  # ponytail: fallback 0 if google.generativeai unavailable
     except Exception as exc:
         logger.exception("LLM generation failed")
         raise RagPipelineError(
@@ -424,5 +466,8 @@ def run_rag_query(query_id: int, question: str, top_k: int | None = None) -> dic
         "answer_id": answer_id,
         "answer": answer_text,
         "response_time_ms": elapsed,
+        "generation_time_ms": gen_time_ms,
+        "input_tokens": input_tokens,
+        "output_tokens": output_tokens,
         "sources": sources,
     }
